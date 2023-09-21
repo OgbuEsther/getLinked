@@ -1,8 +1,8 @@
 import React from 'react'
-
+import girl from "../assets/auth.png"
 const SIgnIn = () => {
   return (
-    <div>
+    <div className='bg-[#150E28] '>
          <section className="bg-white">
     <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
       <section
@@ -10,7 +10,7 @@ const SIgnIn = () => {
       >
         <img
           alt="Night"
-          src="https://images.unsplash.com/photo-1617195737496-bc30194e3a19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+          src={girl}
           className="absolute inset-0 h-full w-full object-cover opacity-80"
         />
   
@@ -31,7 +31,7 @@ const SIgnIn = () => {
           </a>
   
           <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-            Welcome to Squid 🦑
+            Welcome to getLinked
           </h2>
   
           <p className="mt-4 leading-relaxed text-white/90">
@@ -67,7 +67,7 @@ const SIgnIn = () => {
             <h1
               className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl"
             >
-              Welcome to Squid 🦑
+              Welcome to getLinked 🦑
             </h1>
   
             <p className="mt-4 leading-relaxed text-gray-500">
@@ -78,13 +78,148 @@ const SIgnIn = () => {
   
           <form action="#" className="mt-8 grid grid-cols-6 gap-6">
             <div className="col-span-6 sm:col-span-3">
-              <label
-                
-                className="block text-sm font-medium text-gray-700"
-              >
-                First Name
-              </label>
-  
+            <div>
+                    <label className="block py-3 text-gray-500">
+                        Your Email
+                    </label>
+                    <div className="flex items-center p-2 border rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="text-gray-400 w-7 h-7" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        <input
+                            type="email"
+                            placeholder="name@floatui.com"
+                            id="email"
+                            className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
+                        />
+                    </div>
+  </div>
+              <input
+                type="text"
+                id="FirstName"
+                name="first_name"
+                className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-3">
+            <div>
+                    <label className="block py-3 text-gray-500">
+                        Your Email
+                    </label>
+                    <div className="flex items-center p-2 border rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="text-gray-400 w-7 h-7" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        <input
+                            type="email"
+                            placeholder="name@floatui.com"
+                            id="email"
+                            className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
+                        />
+                    </div>
+  </div>
+              <input
+                type="text"
+                id="FirstName"
+                name="first_name"
+                className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-3">
+            <div>
+                    <label className="block py-3 text-gray-500">
+                        Your Email
+                    </label>
+                    <div className="flex items-center p-2 border rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="text-gray-400 w-7 h-7" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        <input
+                            type="email"
+                            placeholder="name@floatui.com"
+                            id="email"
+                            className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
+                        />
+                    </div>
+  </div>
+              <input
+                type="text"
+                id="FirstName"
+                name="first_name"
+                className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-3">
+            <div>
+                    <label className="block py-3 text-gray-500">
+                        Your Email
+                    </label>
+                    <div className="flex items-center p-2 border rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="text-gray-400 w-7 h-7" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        <input
+                            type="email"
+                            placeholder="name@floatui.com"
+                            id="email"
+                            className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
+                        />
+                    </div>
+  </div>
+              <input
+                type="text"
+                id="FirstName"
+                name="first_name"
+                className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-3">
+            <div>
+                    <label className="block py-3 text-gray-500">
+                        Your Email
+                    </label>
+                    <div className="flex items-center p-2 border rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="text-gray-400 w-7 h-7" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        <input
+                            type="email"
+                            placeholder="name@floatui.com"
+                            id="email"
+                            className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
+                        />
+                    </div>
+  </div>
+              <input
+                type="text"
+                id="FirstName"
+                name="first_name"
+                className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-3">
+            <div>
+                    <label className="block py-3 text-gray-500">
+                        Your Email
+                    </label>
+                    <div className="flex items-center p-2 border rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="text-gray-400 w-7 h-7" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                        <input
+                            type="email"
+                            placeholder="name@floatui.com"
+                            id="email"
+                            className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
+                        />
+                    </div>
+  </div>
               <input
                 type="text"
                 id="FirstName"
@@ -93,66 +228,7 @@ const SIgnIn = () => {
               />
             </div>
   
-            <div className="col-span-6 sm:col-span-3">
-              <label
-                
-                className="block text-sm font-medium text-gray-700"
-              >
-                Last Name
-              </label>
-  
-              <input
-                type="text"
-                id="LastName"
-                name="last_name"
-                className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-              />
-            </div>
-  
-            <div className="col-span-6">
-              <label  className="block text-sm font-medium text-gray-700">
-                Email
-              </label>
-  
-              <input
-                type="email"
-                id="Email"
-                name="email"
-                className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-              />
-            </div>
-  
-            <div className="col-span-6 sm:col-span-3">
-              <label
-               
-                className="block text-sm font-medium text-gray-700"
-              >
-                Password
-              </label>
-  
-              <input
-                type="password"
-                id="Password"
-                name="password"
-                className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-              />
-            </div>
-  
-            <div className="col-span-6 sm:col-span-3">
-              <label
-               
-                className="block text-sm font-medium text-gray-700"
-              >
-                Password Confirmation
-              </label>
-  
-              <input
-                type="password"
-                id="PasswordConfirmation"
-                name="password_confirmation"
-                className="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
-              />
-            </div>
+           
   
             <div className="col-span-6">
               <label  className="flex gap-4">
