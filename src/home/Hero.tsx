@@ -6,19 +6,19 @@ const Hero = () => {
    
    
         return (
-          <div className="relative flex flex-col-reverse py-16 lg:py-0 lg:flex-col mt-[10px]">
+          <div className="relative flex flex-col py-16 lg:py-0 lg:flex-col mt-[10px]">
             
             <div className="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:py-20 lg:max-w-screen-xl">
               <div className="mb-0 lg:max-w-lg lg:pr-8 xl:pr-6">
-                <h2 className="mb-5 font-sans text-4xl text-left font-bold tracking-tight text-white sm:text-6xl sm:leading-none md:text-left">
+                <h2 className="mb-5 font-sans text-4xl text-left font-bold tracking-tight text-white sm:text-6xl sm:leading-none md:text-left sm:text-center">
                  getLinked Tech
-                  <br className="hidden md:block" />
+                  <br className="hidden md:block mt-[5px]" />
                  Hackathon <span className='text-[#D434FE]'>1.0</span>
                 </h2>
-                <p className="mb-5 text-base text-white md:text-lg md:text-left">
+                <p className="mb-5 text-base text-white md:text-lg md:text-left sm:text-center">
                  Participate in getLinked tech hackathon 2023 stand <br /> a chance to win a Big prize 
                 </p>
-                <div className="mb-10 mt-[50px] text-left md:mb-16 lg:mb-20">
+                <div className="mb-10 mt-[50px] text-left sm:text-center sm:mt-[30px] md:mb-16 lg:mb-20">
                   <button
                  
                     className="inline-flex items-center p-[20px] justify-center w-auto h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 bg-gradient-to-r from-[#D434FE] to-[#903AFF]  hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
@@ -26,11 +26,11 @@ const Hero = () => {
                     Register
                   </button>
                 </div>
-                <div className="flex flex-col items-start">
+                <div className="flex flex-col items-start sm:items-center">
                   {/* <div className="mb-2 text-sm text-gray-600 md:mb-2">Follow us</div> */}
                   <div className="flex items-start space-x-4">
                    
-                    <div className="flex items-start">
+                    <div className="flex items-start sm:text-center">
                       <a
                         href="/"
                         className="text-white text-[50px] transition-colors duration-300 hover:text-deep-purple-accent-400"
@@ -39,7 +39,7 @@ const Hero = () => {
                       </a>
                     </div>
                    
-                    <div className="flex items-start">
+                    <div className="flex items-start sm:text-center">
                       <a
                         href="/"
                         className="text-white text-[50px] transition-colors duration-300 hover:text-deep-purple-accent-400"
@@ -48,7 +48,7 @@ const Hero = () => {
                       </a>
                     </div>
                    
-                    <div className="flex items-start">
+                    <div className="flex items-start sm:text-center">
                       <a
                         href="/"
                         className="text-white text-[50px] transition-colors duration-300 hover:text-deep-purple-accent-400"
@@ -69,7 +69,7 @@ const Hero = () => {
                 alt=""
               />
               <img
-                className="absolute top-0 object-cover sm:w-[400px]"
+                className="absolute md:top-0 object-cover sm:w-[400px] sm:top-[500px]"
                 src={splash}
                 alt=""
               />

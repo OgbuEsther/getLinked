@@ -7,7 +7,7 @@ const Header = () => {
   
 
   return (
-    <div className="bg-gray-900 w-[100%]">
+    <div className="bg-[#150E28] w-[100%]">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <a
@@ -16,23 +16,9 @@ const Header = () => {
             title="Company"
             className="inline-flex items-center"
           >
-            <svg
-              className="w-8 text-teal-accent-400"
-              viewBox="0 0 24 24"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeMiterlimit="10"
-              stroke="currentColor"
-              fill="none"
-            >
-              <rect x="3" y="1" width="7" height="12" />
-              <rect x="3" y="17" width="7" height="6" />
-              <rect x="14" y="1" width="7" height="6" />
-              <rect x="14" y="11" width="7" height="12" />
-            </svg>
-            <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-              Company
+         
+            <span className="ml-2 text-xl font-bold tracking-wide text-gray-100">
+              get<span className='text-[#D434FE]'>Linked</span>
             </span>
           </a>
           <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -43,7 +29,7 @@ const Header = () => {
                 title="Our product"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Product
+                Timeline
               </a>
             </li>
             <li>
@@ -53,7 +39,7 @@ const Header = () => {
                 title="Our product"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Features
+                Overview
               </a>
             </li>
             <li>
@@ -63,7 +49,7 @@ const Header = () => {
                 title="Product pricing"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Pricing
+                FAQs
               </a>
             </li>
             <li>
@@ -73,21 +59,19 @@ const Header = () => {
                 title="About us"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                About us
+                Contact
               </a>
             </li>
             <li>
-              <a
-                href="/"
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                aria-label="Sign up"
-                title="Sign up"
-              >
-                Sign up
-              </a>
+            <button
+                 
+                 className="inline-flex items-center p-[20px] justify-center w-auto h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 bg-gradient-to-r from-[#D434FE] to-[#903AFF]  hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+               >
+                 Register
+               </button>
             </li>
           </ul>
-          <div className="lg:hidden">
+          <div className="lg:hidden bg-[#150E28]">
             <button
               aria-label="Open Menu"
               title="Open Menu"
@@ -110,7 +94,7 @@ const Header = () => {
               </svg>
             </button>
             {isMenuOpen && (
-              <div className="absolute top-0 left-0 w-full">
+              <div className="absolute z-50 top-0 left-0 w-full bg-[#150E28]">
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
@@ -120,23 +104,9 @@ const Header = () => {
                         title="Company"
                         className="inline-flex items-center"
                       >
-                        <svg
-                          className="w-8 text-deep-purple-accent-400"
-                          viewBox="0 0 24 24"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeMiterlimit="10"
-                          stroke="currentColor"
-                          fill="none"
-                        >
-                          <rect x="3" y="1" width="7" height="12" />
-                          <rect x="3" y="17" width="7" height="6" />
-                          <rect x="14" y="1" width="7" height="6" />
-                          <rect x="14" y="11" width="7" height="12" />
-                        </svg>
-                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Company
+                       
+                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
+                        get<span className='text-[#D434FE]'>Linked</span>
                         </span>
                       </a>
                     </div>
@@ -144,7 +114,7 @@ const Header = () => {
                       <button
                         aria-label="Close Menu"
                         title="Close Menu"
-                        className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        className="p-2 -mt-2 -mr-2 transition duration-200 rounded  hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
@@ -165,7 +135,7 @@ const Header = () => {
                           title="Our product"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Product
+                          Timeline
                         </a>
                       </li>
                       <li>
@@ -175,7 +145,7 @@ const Header = () => {
                           title="Our product"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Features
+                          Overview
                         </a>
                       </li>
                       <li>
@@ -185,7 +155,7 @@ const Header = () => {
                           title="Product pricing"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Pricing
+                          FAQs
                         </a>
                       </li>
                       <li>
@@ -195,18 +165,16 @@ const Header = () => {
                           title="About us"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          About us
+                          Contact
                         </a>
                       </li>
                       <li>
-                        <a
-                          href="/"
-                          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                          aria-label="Sign up"
-                          title="Sign up"
-                        >
-                          Sign up
-                        </a>
+                      <button
+                 
+                 className="inline-flex items-center p-[20px] justify-center w-auto h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 bg-gradient-to-r from-[#D434FE] to-[#903AFF]  hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+               >
+                 Register
+               </button>
                       </li>
                     </ul>
                   </nav>
