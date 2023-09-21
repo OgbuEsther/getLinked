@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import SIgnIn from './auth/SIgnIn'
 import AuthForm from './auth/SignUp'
+import HomeScreen from './home/HomeScreen'
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
 
   return (
   <div>
-    <AuthForm />
+    {/* <AuthForm /> */}
+    <HomeScreen />
   </div>
   )
 }
