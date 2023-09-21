@@ -10,10 +10,11 @@ const HomeScreen = () => {
     <div className=' bg-[#150E28] '>
         <Header />
         <Hero />
-        
+        <Content2 />
+        <hr />
         <Content />
         <hr />
-        <Content2 />
+       
         <FAQs />
     </div>
   )
