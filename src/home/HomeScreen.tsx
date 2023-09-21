@@ -9,6 +9,7 @@ const HomeScreen = () => {
         <Header />
         <Hero />
         <Content />
+        <hr />
     </div>
   )
 }
