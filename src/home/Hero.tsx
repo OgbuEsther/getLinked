@@ -68,7 +68,7 @@ const Hero = () => {
             </div>
             <div className="inset-y-0 top-0 right-0 w-[500px] h-[500px] pt-[100px] mb-[500px] max-w-xl px-4 mx-auto  md:px-0 lg:pl-8 lg:pr-0  lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0">
               <img
-                className="object-contain relative w-full h-[100%]  rounded shadow-lg lg:rounded-none lg:shadow-none  lg:h-full sm:w-[100%] sm:h-[500px]"
+                className="object-contain relative w-full h-[100%]  rounded lg:rounded-none lg:shadow-none  lg:h-full sm:w-[100%] sm:h-[500px]"
                 src={hero}
                 alt=""
               />
