@@ -59,7 +59,7 @@ const SIgnIn = () => {
   };
 
   return (
-    <div className="bg-[#150E28] ">
+    <div className="">
       <section className="bg-[#150E28]">
         <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
           <section className="relative flex h-32 items-end lg:col-span-5 lg:h-full xl:col-span-6">
@@ -68,49 +68,14 @@ const SIgnIn = () => {
               src={girl}
               className="absolute inset-0 h-full w-full object-cover opacity-80"
             />
-
-            <div className="hidden lg:relative lg:block lg:p-12">
-              <a className="block text-white" href="/">
-                <span className="sr-only">Home</span>
-              </a>
-
-              <h2 className="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
-                Welcome to getLinked
-              </h2>
-
-              <p className="mt-4 leading-relaxed text-white/90">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi nam dolorum aliquam, quibusdam aperiam voluptatum.
-              </p>
-            </div>
           </section>
 
           <main className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
-            <div className="max-w-xl lg:max-w-3xl">
-              <div className="relative -mt-16 block lg:hidden">
-                <a
-                  className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-white text-blue-600 sm:h-20 sm:w-20"
-                  href="/"
-                >
-                  <span className="sr-only">Home</span>
-                </a>
-
-                <h1 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-                  Welcome to getLinked
-                </h1>
-
-                <p className="mt-4 leading-relaxed text-gray-500">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Eligendi nam dolorum aliquam, quibusdam aperiam voluptatum.
-                </p>
-              </div>
-
-              <form action="#" className="mt-8 grid grid-cols-6 gap-6">
+            <div className="max-w-xl lg:max-w-3xl shadow-2xl">
+              <form action="#" className="mt-8 grid grid-cols-6 gap-6 ">
                 <div className="col-span-6 sm:col-span-3">
                   <div>
-                    <label className="block py-3 text-gray-500">
-                      Team's Name
-                    </label>
+                    <label className="block py-3 text-white">Team's Name</label>
                     <div className="flex items-center p-2 border rounded-md">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +99,7 @@ const SIgnIn = () => {
                 </div>
                 <div className="col-span-6 sm:col-span-3">
                   <div>
-                    <label className="block py-3 text-gray-500">Phone</label>
+                    <label className="block py-3 text-white">Phone</label>
                     <div className="flex items-center p-2 border rounded-md">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +123,7 @@ const SIgnIn = () => {
                 </div>
                 <div className="col-span-6 sm:col-span-3">
                   <div>
-                    <label className="block py-3 text-gray-500">Email</label>
+                    <label className="block py-3 text-white">Email</label>
                     <div className="flex items-center p-2 border rounded-md">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +148,7 @@ const SIgnIn = () => {
                 </div>
                 <div className="col-span-6 sm:col-span-3">
                   <div>
-                    <label className="block py-3 text-gray-500">
+                    <label className="block py-3 text-white">
                       Project Topic
                     </label>
                     <div className="flex items-center p-2 border rounded-md">
@@ -209,7 +174,7 @@ const SIgnIn = () => {
                 </div>
                 <div className="col-span-6 sm:col-span-3">
                   <div>
-                    <label className="block py-3 text-gray-500">Category</label>
+                    <label className="block py-3 text-white">Category</label>
                     <div className="flex items-center p-2 border rounded-md">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -241,9 +206,7 @@ const SIgnIn = () => {
                 </div>
                 <div className="col-span-6 sm:col-span-3">
                   <div>
-                    <label className="block py-3 text-gray-500">
-                      Group Size
-                    </label>
+                    <label className="block py-3 text-white">Group Size</label>
                     <div className="flex items-center p-2 border rounded-md">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
