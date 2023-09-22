@@ -8,6 +8,7 @@ import TimeLine from './TimeLine'
 import Judge from './Judge'
 import Footer from './Footer'
 import Partners from './Partners'
+import Prizes from './Prizes'
 
 const HomeScreen = () => {
   return (
@@ -26,6 +27,8 @@ const HomeScreen = () => {
         <hr />
 
         <TimeLine />
+        <hr />
+        <Prizes />
         <hr />
         <Partners />
         <hr />
