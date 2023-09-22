@@ -72,6 +72,17 @@ const SIgnIn = () => {
 
           <main className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
             <div className="max-w-xl lg:max-w-3xl shadow-2xl p-[70px]">
+              <div>
+                <h3 className="text-[#D434FE] text-2xl font-bold sm:text-3xl">
+                  Register
+                </h3>
+                <br />
+                <br />
+                <p className="text-white mb-[20px]">Be part of this movement</p>
+                <h3 className="text-2xl text-white font-bold sm:text-3xl">
+                  CREATE YOUR ACCOUNT
+                </h3>
+              </div>
               <form action="#" className="mt-8 grid grid-cols-6 gap-6 ">
                 <div className="col-span-6 sm:col-span-3">
                   <div>
@@ -189,6 +200,9 @@ const SIgnIn = () => {
                 </div>
 
                 <div className="col-span-6">
+                  <p className="text-[#D434FE] italic mb-[20px] font-semibold">
+                    please review your registration details before submitting
+                  </p>
                   <label className="flex gap-4">
                     <input
                       onChange={(e: any) => {
@@ -203,28 +217,17 @@ const SIgnIn = () => {
                       className="h-5 w-5 rounded-md border-gray-200 bg-white shadow-sm"
                     />
 
-                    <span className="text-sm text-gray-700">
-                      I want to receive emails about events, product updates and
-                      company announcements.
+                    <span className="text-sm text-white">
+                      I agreed with the event terms and conditions and privacy
+                      policy
                     </span>
                   </label>
                 </div>
 
                 <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
-                  <button
-                    onClick={registerTeam}
-                    className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
-                  >
-                    Create an account
+                  <button className="inline-flex items-center p-[20px] justify-center sm:w-auto md:w-[700px] h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md  bg-deep-purple-accent-400 bg-gradient-to-r from-[#D434FE] to-[#903AFF]  hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">
+                    Register
                   </button>
-
-                  <p className="mt-4 text-sm text-gray-500 sm:mt-0">
-                    Already have an account?
-                    <a href="#" className="text-gray-700 underline">
-                      Log in
-                    </a>
-                    .
-                  </p>
                 </div>
               </form>
             </div>
