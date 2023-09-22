@@ -1,6 +1,41 @@
 import React from 'react'
 import girl from "../assets/auth.png"
+import axios from "axios"
+
+const baseUrl = `https://backend.getlinked.ai`
+
 const SIgnIn = () => {
+
+
+  //setting states
+  const [category , setCategory] = React.useState([])
+  const [email , setEmail] = React.useState("")
+  const [phone_number , setPhone_number] = React.useState("")
+  const [team_name , setTeam_name] = React.useState("")
+  const [group_size , setGroup_size] = React.useState(0)
+  const [categoryNum , setCategoryNum] = React.useState(0)
+  const [project_topic , setProject_topic] = React.useState("")
+  const [ privacy_poclicy_accepted, setPrivacy_poclicy_accepted] = React.useState(false)
+     
+  
+  //api consumption (post and get)
+  axios
+      .get(`${baseUrl}/hackathon/categories-list`)
+      .then((res) =>{
+        console.log(res?.data)
+        setCategory(res?.data)
+      
+      });
+      axios
+      .post(`${baseUrl}/hackathon/registration`)
+      .then((res) =>{
+        console.log(res?.data)
+        setCategory(res?.data)
+      
+      });
+ 
+
+
   return (
     <div className='bg-[#150E28] '>
          <section className="bg-white">
