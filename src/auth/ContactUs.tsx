@@ -70,7 +70,7 @@ const ContactUs = () => {
         </div>
         <div className="absolute inset-0 my-auto h-[500px]"></div>
       </div>
-      <div className="flex-1 flex items-center justify-center h-[80vh] shadow-lg">
+      <div className="flex-1 flex items-center justify-center sm:h-screen lg:h-[80vh] shadow-lg">
         <div className="w-full max-w-md space-y-8 px-4 p-[30px] bg-transparent text-gray-600 sm:px-0">
           <div className="">
             <div className="mt-5 space-y-2">
