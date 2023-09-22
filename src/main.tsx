@@ -5,6 +5,8 @@ import './index.css'
 import HomeScreen from './home/HomeScreen'
 import SIgnIn from './auth/SIgnIn'
 import ContactUs from './auth/ContactUs'
+import { RouterProvider } from 'react-router-dom'
+import { Routes } from './routes/Routes'
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
@@ -12,7 +14,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     {/* <App /> */}
     {/* <HomeScreen /> */}
     {/* <SIgnIn /> */}
-    <ContactUs />
+    {/* <ContactUs /> */}
+    <RouterProvider router={Routes}/>
    
   </React.StrictMode>,
 )
