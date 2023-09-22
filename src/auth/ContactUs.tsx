@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import Swal from "sweetalert2";
-import PopUp from "../model/PopUp";
+import PopUp from "../model/pop-up/pop-up";
 
 const baseUrl = `https://backend.getlinked.ai`;
 
@@ -26,7 +26,7 @@ const ContactUs = () => {
       )
       .then((res) => {
         console.log(res?.data);
-
+        <PopUp />;
         Swal.fire({
           position: "center",
           icon: "success",

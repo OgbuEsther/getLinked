@@ -15,7 +15,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     {/* <HomeScreen /> */}
     {/* <SIgnIn /> */}
     {/* <ContactUs /> */}
-    {/* <RouterProvider router={Routes}/> */}
-    <PopUp />
+    <RouterProvider router={Routes} />
   </React.StrictMode>
 );
