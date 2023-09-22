@@ -89,6 +89,31 @@ const ContactUs = () => {
               </div>
             </div>
             <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
+              {/* <div className="relative">
+                <label className="sr-only"> Email </label>
+
+                <input
+                  type="email"
+                  id="UserEmail"
+                  placeholder="flea@rhcp.com"
+                  className="w-full rounded-md border-gray-200 pe-10 shadow-sm sm:text-sm"
+                />
+
+                <span className="pointer-events-none absolute inset-y-0 end-0 grid w-10 place-content-center text-gray-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="h-4 w-4"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.404 14.596A6.5 6.5 0 1116.5 10a1.25 1.25 0 01-2.5 0 4 4 0 10-.571 2.06A2.75 2.75 0 0018 10a8 8 0 10-2.343 5.657.75.75 0 00-1.06-1.06 6.5 6.5 0 01-9.193 0zM10 7.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+              </div> */}
               <div>
                 <label className="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600">
                   <input
@@ -97,7 +122,7 @@ const ContactUs = () => {
                     }}
                     type="text"
                     id="first_name"
-                    className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[200px] h-[50px] text-white "
+                    className="peer border-none flex  bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[100%] h-[50px] text-white "
                     placeholder="first_name"
                   />
 
@@ -114,7 +139,7 @@ const ContactUs = () => {
                     }}
                     type="text"
                     id="phone_number"
-                    className="peer text-white border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[200px] h-[50px] "
+                    className="peer text-white border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[100%] h-[50px] "
                     placeholder="phone_number"
                   />
 
@@ -131,7 +156,7 @@ const ContactUs = () => {
                     }}
                     type="text"
                     id="Mail"
-                    className="peer text-white border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[200px] h-[50px] "
+                    className="peer text-white border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[100%] h-[50px] "
                     placeholder="Mail"
                   />
 
@@ -148,7 +173,7 @@ const ContactUs = () => {
                     }}
                     type="text"
                     id="Message"
-                    className="peer text-white border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[200px] h-[100px] "
+                    className="peer text-white border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[100%] h-[100px] "
                     placeholder="Message"
                   />
 
