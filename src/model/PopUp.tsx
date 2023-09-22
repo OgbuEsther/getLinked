@@ -1,9 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
-export default () => {
+const PopUp = () => {
   const [state, setState] = useState(true);
-
-  return state ? (
+  return (
     <div className="fixed inset-0 z-10 overflow-y-auto">
       <div
         className="fixed inset-0 w-full h-full bg-black opacity-40"
@@ -68,7 +67,7 @@ export default () => {
         </div>
       </div>
     </div>
-  ) : (
-    ""
   );
 };
+
+export default PopUp;

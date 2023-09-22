@@ -1,21 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import SIgnIn from './auth/SIgnIn'
-import AuthForm from './auth/ContactUs'
-import HomeScreen from './home/HomeScreen'
-
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import SIgnIn from "./auth/SIgnIn";
+import AuthForm from "./auth/ContactUs";
+import HomeScreen from "./home/HomeScreen";
+import PopUp from "./model/PopUp";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-  <div>
-    {/* <AuthForm /> */}
-    <HomeScreen />
-  </div>
-  )
+    <div>
+      {/* <AuthForm /> */}
+      {/* <HomeScreen /> */}
+    </div>
+  );
 }
 
-export default App
+export default App;
