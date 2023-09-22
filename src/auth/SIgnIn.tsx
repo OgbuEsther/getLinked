@@ -231,8 +231,13 @@ const SIgnIn = () => {
                         id=""
                       >
                         <option value="">Select your category</option>
+                        {/* <option value={2}>1</option>
+                        <option value={3}>2</option>
+                        <option value={4}>3</option>
+                        <option value={5}>4</option>
+                        <option value={6}>5</option> */}
                         {categories?.map((el: any) => (
-                          <option key={el?.id}>{el?.name}</option>
+                          <option key={el?.id}>{el?.id}</option>
                         ))}
                       </select>
                     </div>
