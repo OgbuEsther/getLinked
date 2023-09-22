@@ -60,9 +60,9 @@ const SIgnIn = () => {
 
   return (
     <div className="bg-[#150E28] ">
-      <section className="bg-white">
+      <section className="bg-[#150E28]">
         <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
-          <section className="relative flex h-32 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
+          <section className="relative flex h-32 items-end lg:col-span-5 lg:h-full xl:col-span-6">
             <img
               alt="Night"
               src={girl}
