@@ -7,6 +7,7 @@ import FAQs from './FAQs'
 import TimeLine from './TimeLine'
 import Judge from './Judge'
 import Footer from './Footer'
+import Partners from './Partners'
 
 const HomeScreen = () => {
   return (
@@ -25,6 +26,8 @@ const HomeScreen = () => {
         <hr />
 
         <TimeLine />
+        <hr />
+        <Partners />
         <hr />
         <Footer />
     </div>
