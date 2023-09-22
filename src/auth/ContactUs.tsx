@@ -150,7 +150,10 @@ const ContactUs = () => {
             </div>
 
             <div className="mb-10 mt-[50px]  sm:text-center sm:mt-[30px] md:mb-16 lg:mb-20">
-              <button className="inline-flex items-center p-[20px] justify-center w-auto h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 bg-gradient-to-r from-[#D434FE] to-[#903AFF]  hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">
+              <button
+                onClick={sendMessage}
+                className="inline-flex items-center p-[20px] justify-center w-auto h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 bg-gradient-to-r from-[#D434FE] to-[#903AFF]  hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+              >
                 Submit
               </button>
             </div>

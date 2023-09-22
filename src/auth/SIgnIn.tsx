@@ -44,11 +44,11 @@ const SIgnIn = () => {
         privacy_poclicy_accepted,
       })
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         Swal.fire({
           position: "center",
           icon: "success",
-          title: "Product Uploaded successfully ",
+          title: "Team Registration Successfully ",
           showConfirmButton: false,
           timer: 2500,
         });
@@ -91,10 +91,9 @@ const SIgnIn = () => {
                       <input
                         onChange={(e: any) => {
                           setTeam_name(e.target.value);
-                          console.log("this is team name ", team_name);
                         }}
                         placeholder="Enter the name of your group"
-                        className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
+                        className="w-full p-1 ml-3 text-white outline-none bg-transparent"
                       />
                     </div>
                   </div>
@@ -106,10 +105,9 @@ const SIgnIn = () => {
                       <input
                         onChange={(e: any) => {
                           setPhone_number(e.target.value);
-                          console.log("this is phone number", phone_number);
                         }}
                         placeholder="Enter your phone number"
-                        className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
+                        className="w-full p-1 ml-3 text-white outline-none bg-transparent"
                       />
                     </div>
                   </div>
@@ -121,11 +119,10 @@ const SIgnIn = () => {
                       <input
                         onChange={(e: any) => {
                           setEmail(e.target.value);
-                          console.log("this is email", email);
                         }}
                         type="email"
                         placeholder="Enter your email address"
-                        className="w-full pr-3 p-1 ml-3 text-gray-500 outline-none bg-transparent"
+                        className="w-full pr-3 p-1 ml-3 text-white outline-none bg-transparent"
                       />
                     </div>
                   </div>
@@ -139,10 +136,9 @@ const SIgnIn = () => {
                       <input
                         onChange={(e: any) => {
                           setProject_topic(e.target.value);
-                          console.log("this is project topic", project_topic);
                         }}
                         placeholder="What is your group project topic"
-                        className="w-[650px]  ml-3 text-gray-500 outline-none bg-transparent"
+                        className="w-[650px]  ml-3 text-white outline-none bg-transparent"
                       />
                     </div>
                   </div>
@@ -152,10 +148,9 @@ const SIgnIn = () => {
                     <label className="block py-3 text-white">Category</label>
                     <div className="flex items-center p-2 border rounded-md">
                       <select
-                        className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
+                        className="w-full p-1 ml-3 text-white outline-none bg-transparent"
                         onChange={(e: any) => {
                           setCategory(e.target.value);
-                          console.log("this is category", category);
                         }}
                         name=""
                         id=""
@@ -174,10 +169,9 @@ const SIgnIn = () => {
                     <label className="block py-3 text-white">Group Size</label>
                     <div className="flex items-center p-2 border rounded-md">
                       <select
-                        className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
+                        className="w-full p-1 ml-3 text-white outline-none bg-transparent"
                         onChange={(e: any) => {
                           setGroup_size(e.target.value);
-                          console.log("this is group size", group_size);
                         }}
                         name=""
                         id=""
@@ -207,13 +201,8 @@ const SIgnIn = () => {
                     <input
                       onChange={(e: any) => {
                         setPrivacy_poclicy_accepted(e.target.value);
-                        console.log(
-                          "setPrivacy_poclicy_accepted",
-                          privacy_poclicy_accepted
-                        );
                       }}
                       type="checkbox"
-                      name="marketing_accept"
                       className="h-5 w-5 rounded-md border-gray-200 bg-white shadow-sm"
                     />
 
@@ -225,7 +214,10 @@ const SIgnIn = () => {
                 </div>
 
                 <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
-                  <button className="inline-flex items-center p-[20px] justify-center sm:w-auto md:w-[700px] h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md  bg-deep-purple-accent-400 bg-gradient-to-r from-[#D434FE] to-[#903AFF]  hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">
+                  <button
+                    onClick={registerTeam}
+                    className="inline-flex items-center p-[20px] justify-center sm:w-auto md:w-[700px] h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md  bg-deep-purple-accent-400 bg-gradient-to-r from-[#D434FE] to-[#903AFF]  hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                  >
                     Register
                   </button>
                 </div>
