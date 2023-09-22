@@ -24,7 +24,7 @@ const ContactUs = () => {
         }
       )
       .then((res) => {
-        console.log(res);
+        console.log(res?.data);
         Swal.fire({
           position: "center",
           icon: "success",
@@ -39,52 +39,45 @@ const ContactUs = () => {
   };
 
   return (
-    <main className="w-[100%] flex">
-      <div className="relative flex-1 hidden items-center justify-center h-screen bg-gray-900 lg:flex">
+    <main className="w-[100%] flex bg-[#150E28] items-center">
+      <div className="relative flex-1 hidden items-center justify-center h-screen  lg:flex">
         <div className="relative z-10 w-full max-w-md">
-          <span className="ml-2 text-xl font-bold tracking-wide text-gray-100">
+          {/* <span className="ml-2 text-xl font-bold tracking-wide text-gray-100">
             get<span className="text-[#D434FE]">Linked</span>
-          </span>
+          </span> */}
           <div className=" mt-16 space-y-3">
-            <h3 className="text-white text-3xl font-bold">
-              Start growing your business quickly
-            </h3>
-            <p className="text-gray-300">
-              Create an account and get access to all features for 30-days, No
-              credit card required.
+            <h2 className="text-[#D434FE] text-3xl font-bold">Get in touch</h2>
+            <p className="text-white font-semibold">
+              Contact <br />
+              information
             </p>
+            <br />
+            <p className="text-white font-semibold">
+              27 , Alara Street <br />
+              Yaba 100012 <br />
+              Lagos State
+            </p>
+            <br />
+            <p className="text-white font-semibold">Call Us : 07067981819</p>
+            <br />
+            <p className="text-white font-semibold">
+              we are open from Monday-Friday <br /> 08:00am - 05:00pm
+            </p>
+            <br />
+            <br />
+            <p className="text-[#D434FE] font-semibold">Share On</p>
           </div>
         </div>
-        <div
-          className="absolute inset-0 my-auto h-[500px]"
-          style={{
-            background: "linear-gradient(#150E28, #150E28, #2d2150",
-            filter: "blur(118px)",
-          }}
-        ></div>
+        <div className="absolute inset-0 my-auto h-[500px]"></div>
       </div>
-      <div className="flex-1 flex items-center justify-center h-screen">
-        <div className="w-full max-w-md space-y-8 px-4 bg-white text-gray-600 sm:px-0">
+      <div className="flex-1 flex items-center justify-center h-[80vh] shadow-lg">
+        <div className="w-full max-w-md space-y-8 px-4 p-[30px] bg-transparent text-gray-600 sm:px-0">
           <div className="">
-            <img
-              src="https://floatui.com/logo.svg"
-              width={150}
-              className="lg:hidden"
-            />
             <div className="mt-5 space-y-2">
-              <h3 className="text-gray-800 text-2xl font-bold sm:text-3xl">
-                Questions or need assistance <br />
-                Let us know about it{" "}
+              <h3 className="text-[#D434FE] text-2xl font-bold sm:text-3xl">
+                Questions or need assistance ? Let us know about it{" "}
               </h3>
-              <p className="">Already have an account? </p>
             </div>
-          </div>
-
-          <div className="relative">
-            <span className="block w-full h-px bg-gray-300"></span>
-            <p className="inline-block w-fit text-sm bg-white px-2 absolute -top-2 inset-x-0 mx-auto">
-              Or continue with
-            </p>
           </div>
           <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
             <div>
@@ -95,11 +88,11 @@ const ContactUs = () => {
                   }}
                   type="text"
                   id="first_name"
-                  className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[200px] h-[50px] "
+                  className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[200px] h-[50px] text-white "
                   placeholder="first_name"
                 />
 
-                <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
+                <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-transparent p-0.5 text-xs text-white transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
                   First Name
                 </span>
               </label>
@@ -112,11 +105,11 @@ const ContactUs = () => {
                   }}
                   type="text"
                   id="phone_number"
-                  className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[200px] h-[50px] "
+                  className="peer text-white border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[200px] h-[50px] "
                   placeholder="phone_number"
                 />
 
-                <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
+                <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-transparent p-0.5 text-xs text-white transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
                   Phone Number
                 </span>
               </label>
@@ -129,11 +122,11 @@ const ContactUs = () => {
                   }}
                   type="text"
                   id="Mail"
-                  className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[200px] h-[50px] "
+                  className="peer text-white border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[200px] h-[50px] "
                   placeholder="Mail"
                 />
 
-                <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
+                <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-transparent p-0.5 text-xs text-white transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
                   Mail
                 </span>
               </label>
@@ -146,22 +139,21 @@ const ContactUs = () => {
                   }}
                   type="text"
                   id="Message"
-                  className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[200px] h-[100px] "
+                  className="peer text-white border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 w-[200px] h-[100px] "
                   placeholder="Message"
                 />
 
-                <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
+                <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-transparent p-0.5 text-xs text-white transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
                   Message
                 </span>
               </label>
             </div>
 
-            <button
-              onClick={sendMessage}
-              className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
-            >
-              Create account
-            </button>
+            <div className="mb-10 mt-[50px]  sm:text-center sm:mt-[30px] md:mb-16 lg:mb-20">
+              <button className="inline-flex items-center p-[20px] justify-center w-auto h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 bg-gradient-to-r from-[#D434FE] to-[#903AFF]  hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">
+                Submit
+              </button>
+            </div>
           </form>
         </div>
       </div>
