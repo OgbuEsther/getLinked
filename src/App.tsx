@@ -5,7 +5,6 @@ import "./App.css";
 import SIgnIn from "./auth/SIgnIn";
 import AuthForm from "./auth/ContactUs";
 import HomeScreen from "./home/HomeScreen";
-import PopUp from "./model/PopUp";
 
 function App() {
   const [count, setCount] = useState(0);
