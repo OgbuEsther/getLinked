@@ -8,6 +8,7 @@ import ContactUs from "./auth/ContactUs";
 import { RouterProvider } from "react-router-dom";
 import { Routes } from "./routes/Routes";
 import PopUp from "./model/PopUp";
+import PopUp2 from "./model/PopUp2";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -16,6 +17,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     {/* <SIgnIn /> */}
     {/* <ContactUs /> */}
     {/* <RouterProvider router={Routes}/> */}
-    <PopUp />
+    <PopUp2 />
   </React.StrictMode>
 );
