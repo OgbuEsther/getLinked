@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,22 +54,28 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a
-                href="/"
+              <Link to="/contact">
+                <a
+                href=""
                 aria-label="About us"
                 title="About us"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Contact
               </a>
+              </Link>
+            
             </li>
             <li>
+            <Link to="/auth" >
             <button
                  
                  className="inline-flex items-center p-[20px] justify-center w-auto h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 bg-gradient-to-r from-[#D434FE] to-[#903AFF]  hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                >
                  Register
                </button>
+            </Link>
+          
             </li>
           </ul>
           <div className="lg:hidden bg-[#150E28]">
@@ -159,22 +166,27 @@ const Header = () => {
                         </a>
                       </li>
                       <li>
-                        <a
-                          href="/"
-                          aria-label="About us"
-                          title="About us"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Contact
-                        </a>
+                      <Link to="/contact" >
+                <a
+                href=""
+                aria-label="About us"
+                title="About us"
+                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                Contact
+              </a>
+              </Link>
                       </li>
                       <li>
-                      <button
+                         <Link to="/auth" >
+                         <button
                  
                  className="inline-flex items-center p-[20px] justify-center w-auto h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 bg-gradient-to-r from-[#D434FE] to-[#903AFF]  hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                >
                  Register
                </button>
+                         </Link>
+               
                       </li>
                     </ul>
                   </nav>
