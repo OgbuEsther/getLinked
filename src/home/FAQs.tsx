@@ -1,5 +1,5 @@
 import React from 'react'
-import faq from "../assets/the_big_idea .png"
+import faq from "../assets/faq.png"
 const FAQs = () => {
   return (
     <div className="space-y-4 mt-[30px] flex flex-col justify-center items-center w-[100%]">

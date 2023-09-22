@@ -9,8 +9,8 @@ import AuthForm from './auth/SignUp'
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     {/* <App /> */}
-    {/* <HomeScreen /> */}
-    <SIgnIn />
+    <HomeScreen />
+    {/* <SIgnIn /> */}
    
   </React.StrictMode>,
 )
