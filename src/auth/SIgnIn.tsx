@@ -71,21 +71,12 @@ const SIgnIn = () => {
           </section>
 
           <main className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
-            <div className="max-w-xl lg:max-w-3xl shadow-2xl">
+            <div className="max-w-xl lg:max-w-3xl shadow-2xl p-[70px]">
               <form action="#" className="mt-8 grid grid-cols-6 gap-6 ">
                 <div className="col-span-6 sm:col-span-3">
                   <div>
                     <label className="block py-3 text-white">Team's Name</label>
                     <div className="flex items-center p-2 border rounded-md">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="text-gray-400 w-7 h-7"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                      </svg>
                       <input
                         onChange={(e: any) => {
                           setTeam_name(e.target.value);
@@ -101,15 +92,6 @@ const SIgnIn = () => {
                   <div>
                     <label className="block py-3 text-white">Phone</label>
                     <div className="flex items-center p-2 border rounded-md">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="text-gray-400 w-7 h-7"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                      </svg>
                       <input
                         onChange={(e: any) => {
                           setPhone_number(e.target.value);
@@ -125,15 +107,6 @@ const SIgnIn = () => {
                   <div>
                     <label className="block py-3 text-white">Email</label>
                     <div className="flex items-center p-2 border rounded-md">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="text-gray-400 w-7 h-7"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                      </svg>
                       <input
                         onChange={(e: any) => {
                           setEmail(e.target.value);
@@ -141,7 +114,7 @@ const SIgnIn = () => {
                         }}
                         type="email"
                         placeholder="Enter your email address"
-                        className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
+                        className="w-full pr-3 p-1 ml-3 text-gray-500 outline-none bg-transparent"
                       />
                     </div>
                   </div>
@@ -152,22 +125,13 @@ const SIgnIn = () => {
                       Project Topic
                     </label>
                     <div className="flex items-center p-2 border rounded-md">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="text-gray-400 w-7 h-7"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                      </svg>
                       <input
                         onChange={(e: any) => {
                           setProject_topic(e.target.value);
                           console.log("this is project topic", project_topic);
                         }}
                         placeholder="What is your group project topic"
-                        className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
+                        className="w-[650px]  ml-3 text-gray-500 outline-none bg-transparent"
                       />
                     </div>
                   </div>
@@ -176,16 +140,6 @@ const SIgnIn = () => {
                   <div>
                     <label className="block py-3 text-white">Category</label>
                     <div className="flex items-center p-2 border rounded-md">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="text-gray-400 w-7 h-7"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                      </svg>
-
                       <select
                         className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
                         onChange={(e: any) => {
@@ -208,15 +162,6 @@ const SIgnIn = () => {
                   <div>
                     <label className="block py-3 text-white">Group Size</label>
                     <div className="flex items-center p-2 border rounded-md">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="text-gray-400 w-7 h-7"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                      </svg>
                       <select
                         className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
                         onChange={(e: any) => {
