@@ -7,14 +7,14 @@ const baseUrl = `https://backend.getlinked.ai`;
 
 const SIgnIn = () => {
   //setting states
-  const [category, setCategory] = React.useState("");
+  const [category, setCategory] = React.useState();
   const [categories, setCategories] = React.useState([]);
-  const [email, setEmail] = React.useState("");
-  const [phone_number, setPhone_number] = React.useState("");
-  const [team_name, setTeam_name] = React.useState("");
+  const [email, setEmail] = React.useState();
+  const [phone_number, setPhone_number] = React.useState();
+  const [team_name, setTeam_name] = React.useState();
   const [group_size, setGroup_size] = React.useState(0);
   const [categoryNum, setCategoryNum] = React.useState(0);
-  const [project_topic, setProject_topic] = React.useState("");
+  const [project_topic, setProject_topic] = React.useState();
   const [privacy_poclicy_accepted, setPrivacy_poclicy_accepted] =
     React.useState(true);
 
@@ -122,11 +122,10 @@ const SIgnIn = () => {
                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                       </svg>
                       <input
-                        onChange={(e) => {
+                        onChange={(e: any) => {
                           setTeam_name(e.target.value);
                           console.log("this is team name ", team_name);
                         }}
-                        type="text"
                         placeholder="Enter the name of your group"
                         className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
                       />
@@ -147,11 +146,10 @@ const SIgnIn = () => {
                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                       </svg>
                       <input
-                        onChange={(e) => {
+                        onChange={(e: any) => {
                           setPhone_number(e.target.value);
                           console.log("this is phone number", phone_number);
                         }}
-                        type="text"
                         placeholder="Enter your phone number"
                         className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
                       />
@@ -172,7 +170,7 @@ const SIgnIn = () => {
                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                       </svg>
                       <input
-                        onChange={(e) => {
+                        onChange={(e: any) => {
                           setEmail(e.target.value);
                           console.log("this is email", email);
                         }}
@@ -199,11 +197,10 @@ const SIgnIn = () => {
                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                       </svg>
                       <input
-                        onChange={(e) => {
+                        onChange={(e: any) => {
                           setProject_topic(e.target.value);
                           console.log("this is project topic", project_topic);
                         }}
-                        type="text"
                         placeholder="What is your group project topic"
                         className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
                       />
@@ -226,7 +223,7 @@ const SIgnIn = () => {
 
                       <select
                         className="w-full p-1 ml-3 text-gray-500 outline-none bg-transparent"
-                        onChange={(e) => {
+                        onChange={(e: any) => {
                           setCategory(e.target.value);
                           console.log("this is category", category);
                         }}
