@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import girl from "../assets/auth.png";
 import axios from "axios";
 import Swal from "sweetalert2";
@@ -19,28 +19,43 @@ const SIgnIn = () => {
     React.useState(true);
 
   //api consumption (post and get)
-  axios
-    .get(`${baseUrl}/hackathon/categories-list`)
-    .then((res) => {
-      console.log(res?.data);
-      setCategories(res?.data);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+  useEffect(() => {
+    axios
+      .get(`${baseUrl}/hackathon/categories-list`)
+      .then((res) => {
+        // console.log(res?.data);
+        setCategories(res?.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   const registerTeam = async (e: any) => {
     e.preventDefault();
-    await axios.post(`${baseUrl}/hackathon/registration`).then((res) => {
-      console.log(res);
-      Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "Product Uploaded successfully ",
-        showConfirmButton: false,
-        timer: 2500,
+    await axios
+      .post(`${baseUrl}/hackathon/registration`, {
+        team_name,
+        email,
+        phone_number,
+        group_size,
+        category,
+        project_topic,
+        privacy_poclicy_accepted,
+      })
+      .then((res) => {
+        console.log(res);
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "Product Uploaded successfully ",
+          showConfirmButton: false,
+          timer: 2500,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
       });
-    });
   };
 
   return (
@@ -218,14 +233,10 @@ const SIgnIn = () => {
                         name=""
                         id=""
                       >
-                        {/* <option value="">Select your category</option> */}
-                        {/* {categories?.map((el: any) => (
-                          <option>{el?.name}</option>
-                        ))} */}
-
-                        <option value="UI/UX">UI/UX</option>
-                        <option value="WEB">WEB</option>
-                        <option value="MOBILE">MOBILE</option>
+                        <option value="">Select your category</option>
+                        {categories?.map((el: any) => (
+                          <option key={el?.id}>{el?.name}</option>
+                        ))}
                       </select>
                     </div>
                   </div>
