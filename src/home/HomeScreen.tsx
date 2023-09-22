@@ -9,6 +9,7 @@ import Judge from './Judge'
 import Footer from './Footer'
 import Partners from './Partners'
 import Prizes from './Prizes'
+import PrivacyPolicy from './PrivacyPolicy'
 
 const HomeScreen = () => {
   return (
@@ -31,6 +32,8 @@ const HomeScreen = () => {
         <Prizes />
         <hr />
         <Partners />
+        <hr />
+        <PrivacyPolicy />
         <hr />
         <Footer />
     </div>
