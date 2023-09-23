@@ -11,24 +11,44 @@ import PrivacyPolicy from "./PrivacyPolicy";
 import big from "../assets/bigbulb.png";
 import girl from "../assets/girl.png";
 
+import Fade from "react-reveal/Fade";
+
 const HomeScreen = () => {
   return (
     <div className=" bg-[#150E28] ">
-      <Header />
-      <Hero />
-      <Content2 order="" img={big} visibility="hidden" />
-      <Content2 order="order-2 max-md:order-none" img={girl} visibility="" />
-      <Judge />
-      <FAQs />
-
-      <TimeLine />
-      <hr />
-      <Prizes />
-      <Partners />
-
-      <PrivacyPolicy />
-
-      <Footer />
+     
+        <Header />
+     
+    
+        <Hero />
+     
+      <Fade>
+        <Content2 order="" img={big} visibility="hidden" />
+      </Fade>
+      <Fade>
+        <Content2 order="order-2 max-md:order-none" img={girl} visibility="" />
+      </Fade>
+      <Fade>
+        <Judge />
+      </Fade>
+      <Fade>
+        <FAQs />
+      </Fade>
+      <Fade>
+        <TimeLine />
+      </Fade>
+      <Fade>
+        <Prizes />
+      </Fade>
+      <Fade>
+        <Partners />
+      </Fade>
+      <Fade>
+        <PrivacyPolicy />
+      </Fade>
+      <Fade>
+        <Footer />
+      </Fade>
     </div>
   );
 };
