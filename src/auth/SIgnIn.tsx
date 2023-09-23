@@ -205,14 +205,15 @@ const SIgnIn = () => {
                   </p>
                   <label className="flex gap-4">
                     <input
+                      style={{ backgroundColor: "transparent" }}
                       onChange={(e: any) => {
                         setPrivacy_poclicy_accepted(e.target.value);
                       }}
                       type="checkbox"
-                      className="h-5 w-5 rounded-md border-gray-200 bg-white shadow-sm"
+                      className="h-5 w-5 rounded-md shadow-sm"
                     />
 
-                    <span className="text-sm text-white mb-[20px]">
+                    <span className="text-sm text-white sm:mb-[20px] lg:mb-0">
                       I agreed with the event terms and conditions and privacy
                       policy
                     </span>
@@ -221,8 +222,12 @@ const SIgnIn = () => {
 
                 <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
                   <button
+                    style={{
+                      background:
+                        "linear-gradient(270deg, #903AFF 0%, #D434FE 56%, #FF26B9 100%, #FE34B9 100%)",
+                    }}
                     onClick={registerTeam}
-                    className="inline-flex items-center p-[20px] justify-center sm:w-auto md:w-[700px] h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md  bg-deep-purple-accent-400 bg-gradient-to-r from-[#D434FE] to-[#903AFF]  hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                    className="inline-flex items-center p-[20px] justify-center sm:w-auto md:w-[700px] h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md   hover:bg-gradient-to-r from-[#D434FE] to-[#903AFF] focus:shadow-outline focus:outline-none"
                   >
                     Submit
                   </button>
