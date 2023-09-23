@@ -12,7 +12,7 @@ const Header = () => {
     { title: "Timeline", path: "#timeline" },
     { title: "Overview", path: "#overview" },
     { title: "FAQs", path: "#faq" },
-    { title: "Contact", path: "contact" },
+    { title: "Contact", path: "/contact" },
   ];
 
   return (

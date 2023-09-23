@@ -24,25 +24,8 @@ const HomeScreen = () => {
       <TimeLine />
       <Prizes />
       <Partners />
-      {/* <Content2 />
-        <hr />
-        <Content />
-        <hr />
-        <Judge />
-       <hr />
-        <FAQs />
-
-        <hr />
-
-        <TimeLine />
-        <hr />
-        <Prizes />
-        <hr />
-        <Partners />
-        <hr />
-        <PrivacyPolicy />
-        <hr />
-        <Footer /> */}
+      <PrivacyPolicy />
+      <Footer />
     </div>
   );
 };
