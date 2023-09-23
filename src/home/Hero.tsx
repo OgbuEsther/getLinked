@@ -1,11 +1,22 @@
 import line from "../assets/line.svg";
+import heroBG from "../assets/heroBG.svg";
 import HeroImg from "../components/Blocks/home/HeroImg";
 import HeroRight from "../components/Blocks/home/HeroRight";
 import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
-    <div className="w-full min-h-[90vh] ">
+    <div
+      className="w-full min-h-[90vh] relative"
+      style={{
+        backgroundImage: `url(${heroBG})`,
+        backgroundSize: "contain",
+        backgroundPosition: "right",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* background color */}
+
       <div className="w-[90%] m-auto">
         {/* top */}
         <div className="w-full flex justify-end mt-6 relative">

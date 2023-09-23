@@ -41,14 +41,17 @@ function CountdownTimer({ targetTime }: CountdownProps) {
     <div className="countdown flex gap-1">
       <span className="countdown-item">
         {String(timeLeft.hours).padStart(2, "0")}
+        <span className="text-xl">H</span>
       </span>
       :
       <span className="countdown-item">
         {String(timeLeft.minutes).padStart(2, "0")}
+        <span className="text-xl">M</span>
       </span>
       :
       <span className="countdown-item">
         {String(timeLeft.seconds).padStart(2, "0")}
+        <span className="text-xl">S</span>
       </span>
     </div>
   );

@@ -1,250 +1,80 @@
 import React from "react";
-import { useState } from "react";
+import Timeline from "../components/Blocks/home/TimeLine";
 
 const TimeLine = () => {
   return (
-    <div
-      id="timeline"
-      className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
-    >
-      <div className="grid max-w-2xl mx-auto">
-        <div className="flex">
-          <div className="flex flex-col items-center mr-6">
-            <div className="w-px h-10 opacity-0 sm:h-full" />
+    <div className=" pt-20 pb-20 bg-[#150e29] border-b border-slate-800">
+      <div className="w-[90%] m-auto ">
+        <h1 className="text-3xl tracking-tighter leading-1 text-white text-center font-extrabold max-md:text-center max-md:text-2xl">
+          Timeline
+        </h1>
+        <p className="text-center py-4 text-white text-sm w-[28%] m-auto max-md:w-[90%] max-md:text-xs">
+          Here is the breakdown of the time we anticipate using for the upcoming
+          event.
+        </p>
 
-            <div>
-              <div className="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
-                1
-              </div>
-            </div>
-            <div className="w-px h-full bg-gray-300" />
-          </div>
-          <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
-            <div className="sm:mr-5">
-              <div className="flex items-center justify-center w-16 h-16 my-3 rounded-full bg-indigo-50 sm:w-24 sm:h-24">
-                <svg
-                  className="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-              <p className="text-xl font-semibold sm:text-base">
-                Read the recipe
-              </p>
-              <p className="text-sm text-gray-700">
-                All recipes are written using certain conventions, which define
-                the characteristics of common ingredients. The rules vary from
-                place to place.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex">
-          <div className="flex flex-col items-center mr-6">
-            <div className="w-px h-10 bg-gray-300 sm:h-full" />
-            <div>
-              <div className="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
-                2
-              </div>
-            </div>
-            <div className="w-px h-full bg-gray-300" />
-          </div>
-          <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
-            <div className="sm:mr-5">
-              <div className="flex items-center justify-center w-16 h-16 my-3 rounded-full bg-indigo-50 sm:w-24 sm:h-24">
-                <svg
-                  className="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-              <p className="text-xl font-semibold sm:text-base">Heart attack</p>
-              <p className="text-sm text-gray-700">
-                A flower in my garden, a mystery in my panties. Heart attack
-                never stopped old Big Bear. I didn't even know we were calling
-                him Big Bear.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex">
-          <div className="flex flex-col items-center mr-6">
-            <div className="w-px h-10 bg-gray-300 sm:h-full" />
-            <div>
-              <div className="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
-                3
-              </div>
-            </div>
-            <div className="w-px h-full opacity-0" />
-          </div>
-          <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
-            <div className="sm:mr-5">
-              <div className="flex items-center justify-center w-16 h-16 my-3 rounded-full bg-indigo-50 sm:w-24 sm:h-24">
-                <svg
-                  className="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-              <p className="text-xl font-semibold sm:text-base">Never stop</p>
-              <p className="text-sm text-gray-700">
-                The first mate and his Skipper too will do their very best to
-                make the others comfortable in their tropic island nest. Michael
-                Knight a young loner.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+        {/* timeline */}
+        <Timeline
+          number="1"
+          date="November 18, 2023"
+          desc="The getlinked tech hackathon 1.0 is formally announced
+to the general public and teams begin to get ready to register"
+          first_order="text-end max-md:text-start"
+          last_order="justify-end"
+          title="Hackathon Announcement"
+        />
+        <Timeline
+          number="2"
+          date="November 18, 2023"
+          desc="Interested teams can now show their interest in the
+getlinked tech hackathon 1.0 2023 by proceeding to register"
+          first_order="order-1 items-start justify-end "
+          last_order="-order-2 items-end justify-end "
+          title="Teams Registration begins"
+          descAlign="text-start"
+        />
 
-      <div className="grid max-w-2xl mx-auto">
-        <div className="flex">
-          <div className="flex flex-col items-center mr-6">
-            <div className="w-px h-10 opacity-0 sm:h-full" />
-
-            <div>
-              <div className="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
-                1
-              </div>
-            </div>
-            <div className="w-px h-full bg-gray-300" />
-          </div>
-          <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
-            <div className="sm:mr-5">
-              <div className="flex items-center justify-center w-16 h-16 my-3 rounded-full bg-indigo-50 sm:w-24 sm:h-24">
-                <svg
-                  className="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-              <p className="text-xl font-semibold sm:text-base">
-                Read the recipe
-              </p>
-              <p className="text-sm text-gray-700">
-                All recipes are written using certain conventions, which define
-                the characteristics of common ingredients. The rules vary from
-                place to place.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex">
-          <div className="flex flex-col items-center mr-6">
-            <div className="w-px h-10 bg-gray-300 sm:h-full" />
-            <div>
-              <div className="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
-                2
-              </div>
-            </div>
-            <div className="w-px h-full bg-gray-300" />
-          </div>
-          <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
-            <div className="sm:mr-5">
-              <div className="flex items-center justify-center w-16 h-16 my-3 rounded-full bg-indigo-50 sm:w-24 sm:h-24">
-                <svg
-                  className="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-              <p className="text-xl font-semibold sm:text-base">Heart attack</p>
-              <p className="text-sm text-gray-700">
-                A flower in my garden, a mystery in my panties. Heart attack
-                never stopped old Big Bear. I didn't even know we were calling
-                him Big Bear.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex">
-          <div className="flex flex-col items-center mr-6">
-            <div className="w-px h-10 bg-gray-300 sm:h-full" />
-            <div>
-              <div className="flex items-center justify-center w-8 h-8 text-xs font-medium border rounded-full">
-                3
-              </div>
-            </div>
-            <div className="w-px h-full opacity-0" />
-          </div>
-          <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
-            <div className="sm:mr-5">
-              <div className="flex items-center justify-center w-16 h-16 my-3 rounded-full bg-indigo-50 sm:w-24 sm:h-24">
-                <svg
-                  className="w-12 h-12 text-deep-purple-accent-400 sm:w-16 sm:h-16"
-                  stroke="currentColor"
-                  viewBox="0 0 52 52"
-                >
-                  <polygon
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div>
-              <p className="text-xl font-semibold sm:text-base">Never stop</p>
-              <p className="text-sm text-gray-700">
-                The first mate and his Skipper too will do their very best to
-                make the others comfortable in their tropic island nest. Michael
-                Knight a young loner.
-              </p>
-            </div>
-          </div>
-        </div>
+        <Timeline
+          number="3"
+          date="November 18, 2023"
+          desc="Interested Participants are no longer Allowed to
+register"
+          first_order="justify-end text-end max-md:text-start"
+          last_order="justify-end"
+          title="Teams Registration ends"
+        />
+        <Timeline
+          number="4"
+          date="November 18, 2023"
+          desc="All teams whom idea has been accepted into getlinked tech
+hackathon 1.0 2023 are formally announced"
+          first_order="order-1 items-start justify-end "
+          last_order="-order-2 items-end justify-end "
+          title="Announcement of the accepted teams
+and ideas"
+          descAlign="text-start"
+          titleAlign="text-start"
+        />
+        <Timeline
+          number="5"
+          date="November 18, 2023"
+          desc="Accepted teams can now proceed to build their
+ground breaking skill driven solutions"
+          first_order="text-end max-md:text-start"
+          last_order="justify-end"
+          title="Getlinked Hackathon 1.0 Offically Begins"
+        />
+        <Timeline
+          number="6"
+          date="November 18, 2023"
+          desc="Teams get the opportunity to pitch their projects to judges.
+The winner of the hackathon will also be announced on
+this day"
+          first_order="order-1 items-start justify-end "
+          last_order="-order-2 items-end justify-end "
+          title="Demo Day"
+          descAlign="text-start"
+        />
       </div>
     </div>
   );

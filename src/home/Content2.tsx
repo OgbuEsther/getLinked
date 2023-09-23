@@ -1,24 +1,32 @@
 import { FC } from "react";
-import star from "../assets/star.svg";
-type contentData = {
-  order: string;
-  img: string;
-};
+import flare from "../assets/Purple-Lens-Flare.svg";
+import { contentData } from "../interfaces/Index";
 
-const Content2: FC<contentData> = ({ order, img }) => {
+const Content2: FC<contentData> = ({ order, img, visibility }) => {
   return (
     <div>
       <div
         id="overview"
-        className="w-[90%] m-auto py-10 grid grid-cols-2 max-md:grid-cols-1 max-md:gap-8"
+        className="relative w-[90%] m-auto py-10 grid grid-cols-2 max-md:grid-cols-1 max-md:gap-8"
       >
         <div className={`${order} w-full grid  place-items-center`}>
           <img src={img} alt="" loading="lazy" className="max-md:w-[80%]" />
         </div>
+        <img
+          src={flare}
+          alt=""
+          style={{
+            position: "absolute",
+            top: -150,
+            left: -100,
+            height: "90vh",
+          }}
+          className={`${visibility}`}
+        />
 
         {/* bottom */}
 
-        <div className="flex flex-col justify-center relative">
+        <div className="flex flex-col justify-center">
           <h2 className="text-3xl tracking-tighter leading-1 text-white font-extrabold max-md:text-center max-md:text-2xl">
             Introduction to getlinked <br />{" "}
             <span className="text-[var(--accent-color)]">
@@ -26,10 +34,7 @@ const Content2: FC<contentData> = ({ order, img }) => {
             </span>
           </h2>
 
-          <p className=" text-white pt-6 text-sm w-[80%] tracking-wide max-md:text-center max-md:w-full">
-            <img className="absolute top-0 right-0" src={star} alt="" />
-            <img className="absolute top-0 left-0" src={star} alt="" />
-            <img className="absolute bottom-0 right-0" src={star} alt="" />
+          <p className="text-white pt-6 text-sm w-[80%] tracking-wide max-md:text-center max-md:w-full">
             Our tech hackathon is a melting pot of visionaries, and its purpose
             is as clear as day: to shape the future. Whether you're a coding
             genius, a design maverick, or a concept wizard, you'll have the

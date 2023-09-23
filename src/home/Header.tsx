@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/getlinked.png";
 import close from "../assets/close.svg";
+import flare from "../assets/Purple-Lens-Flare.svg";
 import navIcon from "../assets/navIcon.svg";
 import Button from "../components/props/Button";
 import { NavLink } from "react-router-dom";
@@ -12,11 +13,23 @@ const Header = () => {
     { title: "Timeline", path: "#timeline" },
     { title: "Overview", path: "#overview" },
     { title: "FAQs", path: "#faq" },
-    { title: "Contact", path: "/contact" },
+    { title: "Contact", path: "contact" },
   ];
 
   return (
-    <header className="h-[10vh] bg-[var(--primary-color)] border-b border-slate-800">
+    <header className="relative h-[10vh] bg-[var(--primary-color)] border-b border-slate-800">
+      {/* flare */}
+      <div>
+        <img
+          src={flare}
+          alt=""
+          style={{
+            position: "absolute",
+            top: -250,
+            left: -200,
+          }}
+        />
+      </div>
       <div className="w-[90%] flex justify-between items-center  m-auto h-full ">
         {/* logo */}
         <img src={logo} alt="logo" loading="lazy" width={120} />
@@ -67,12 +80,12 @@ const Header = () => {
                 {navigation.map((item, idx) => {
                   return (
                     <nav key={idx}>
-                      <p
-                        id={item.path}
+                      <a
+                        href={item.path}
                         className="block py-2 text-white text-base font-medium cursor-pointer"
                       >
                         {item.title}
-                      </p>
+                      </a>
                     </nav>
                   );
                 })}
