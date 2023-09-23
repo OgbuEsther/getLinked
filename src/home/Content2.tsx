@@ -1,5 +1,5 @@
 import { FC } from "react";
-
+import star from "../assets/star.svg";
 type contentData = {
   order: string;
   img: string;
@@ -18,7 +18,7 @@ const Content2: FC<contentData> = ({ order, img }) => {
 
         {/* bottom */}
 
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center relative">
           <h2 className="text-3xl tracking-tighter leading-1 text-white font-extrabold max-md:text-center max-md:text-2xl">
             Introduction to getlinked <br />{" "}
             <span className="text-[var(--accent-color)]">
@@ -26,7 +26,10 @@ const Content2: FC<contentData> = ({ order, img }) => {
             </span>
           </h2>
 
-          <p className="text-white pt-6 text-sm w-[80%] tracking-wide max-md:text-center max-md:w-full">
+          <p className=" text-white pt-6 text-sm w-[80%] tracking-wide max-md:text-center max-md:w-full">
+            <img className="absolute top-0 right-0" src={star} alt="" />
+            <img className="absolute top-0 left-0" src={star} alt="" />
+            <img className="absolute bottom-0 right-0" src={star} alt="" />
             Our tech hackathon is a melting pot of visionaries, and its purpose
             is as clear as day: to shape the future. Whether you're a coding
             genius, a design maverick, or a concept wizard, you'll have the
