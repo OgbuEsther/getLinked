@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import PopUp from "../model/pop-up/pop-up";
-import Header from "../home/Header";
 
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
@@ -56,7 +55,6 @@ const ContactUs = () => {
 
   return (
     <div className="h-screen">
-      <Header />
       {showPopUp && <PopUp OnClick={NotShow} />}
       <main className="w-[100%] h-[calc(100vh-10vh)] flex bg-[#150E28] items-center fixed bg-hero bg-left-top bg-no-repeat">
         <div className="relative flex-1 hidden items-center justify-center h-screen  lg:flex">
