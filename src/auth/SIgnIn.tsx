@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import girl from "../assets/auth.png";
 import axios from "axios";
 import Swal from "sweetalert2";
-
+import star from "../assets/star.svg";
 const baseUrl = `https://backend.getlinked.ai`;
 
 const SIgnIn = () => {
@@ -62,15 +62,19 @@ const SIgnIn = () => {
     <div className="">
       <section className="bg-[#150E28]">
         <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
-          <section className="relative flex h-32 items-end lg:col-span-5 lg:h-full xl:col-span-6">
+          <section className="relative flex h-30 items-end lg:col-span-5 lg:h-full xl:col-span-6 bg-hero">
             <img
               alt="Night"
               src={girl}
-              className="absolute inset-0 h-full w-full object-cover opacity-80"
+              className="inset-0 h-full w-full object-cover opacity-80"
             />
+            <img className="absolute top-[85%] right-20" src={star} alt="" />
+            <img className="absolute top-100 left-10" src={star} alt="" />
+            <img className="absolute top-10" src={star} alt="" />
+            <img className="absolute top-10" src={star} alt="" />
           </section>
 
-          <main className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
+          <main className=" lg:h-screen px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
             <div className="max-w-xl lg:max-w-3xl shadow-2xl p-[70px]">
               <div>
                 <h3 className="text-[#D434FE] text-2xl font-bold sm:text-3xl">
