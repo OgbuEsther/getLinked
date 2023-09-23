@@ -68,7 +68,7 @@ const SIgnIn = () => {
   };
 
   return (
-    <div className="">
+    <div>
       {showPopUp && <PopUp OnClick={NotShow} />}
       <section className="bg-[#150E28]">
         <div className="lg:grid lg:h-screen lg:grid-cols-12">
@@ -237,7 +237,7 @@ const SIgnIn = () => {
                         "linear-gradient(270deg, #903AFF 0%, #D434FE 56%, #FF26B9 100%, #FE34B9 100%)",
                     }}
                     onClick={registerTeam}
-                    className="inline-flex items-center p-[20px] justify-center sm:w-auto md:w-[700px] h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md   hover:bg-gradient-to-r from-[#D434FE] to-[#903AFF] focus:shadow-outline focus:outline-none"
+                    className="inline-flex items-center p-[20px] justify-center sm:w-auto md:w-[700px] h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md mt-[20px]  hover:bg-gradient-to-r from-[#D434FE] to-[#903AFF] focus:shadow-outline focus:outline-none"
                   >
                     Submit
                   </button>
