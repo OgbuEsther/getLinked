@@ -1,161 +1,54 @@
-import React from 'react'
+import liberty from "../assets/Liberty.png";
+import win from "../assets/Liberty(2).png";
+import imf from "../assets/wisper.png";
+import winwise from "../assets/Winwise.png";
+import pb from "../assets/Paybox.png";
+import vp from "../assets/VizualPlus.png";
 
 const Partners = () => {
-   
-        return (
-          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div className="grid row-gap-8 sm:row-gap-0 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="p-8 border-b sm:border-r">
-                <div className="max-w-md text-center">
-                  <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
-                    <svg
-                      className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </div>
-                  <h6 className="mb-2 font-semibold leading-5">The quick fox</h6>
-                  <p className="mb-3 text-sm text-gray-900">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium rem aperiam, eaque ipsa quae. Sit error voluptatem.
-                  </p>
-                </div>
-              </div>
-              <div className="p-8 border-b lg:border-r">
-                <div className="max-w-md text-center">
-                  <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
-                    <svg
-                      className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </div>
-                  <h6 className="mb-2 font-semibold leading-5">Leverage agile</h6>
-                  <p className="mb-3 text-sm text-gray-900">
-                    Storage shed, troughs feed bale manure, is garden wheat oats at
-                    augers. Bulls at rose garden cucumbers mice sunflower wheat in
-                    pig.
-                  </p>
-                </div>
-              </div>
-              <div className="p-8 border-b sm:border-r lg:border-r-0">
-                <div className="max-w-md text-center">
-                  <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
-                    <svg
-                      className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </div>
-                  <h6 className="mb-2 font-semibold leading-5">Organically grow</h6>
-                  <p className="mb-3 text-sm text-gray-900">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium rem aperiam, eaque ipsa quae. Sit error voluptatem.
-                  </p>
-                </div>
-              </div>
-              <div className="p-8 border-b lg:border-b-0 lg:border-r">
-                <div className="max-w-md text-center">
-                  <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
-                    <svg
-                      className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </div>
-                  <h6 className="mb-2 font-semibold leading-5">Have a good one</h6>
-                  <p className="mb-3 text-sm text-gray-900">
-                    Storage shed, troughs feed bale manure, is garden wheat oats at
-                    augers. Bulls at rose garden cucumbers mice sunflower wheat in
-                    pig.
-                  </p>
-                </div>
-              </div>
-              <div className="p-8 border-b sm:border-b-0 sm:border-r">
-                <div className="max-w-md text-center">
-                  <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
-                    <svg
-                      className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </div>
-                  <h6 className="mb-2 font-semibold leading-5">Trough pomfret</h6>
-                  <p className="mb-3 text-sm text-gray-900">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium rem aperiam, eaque ipsa quae. Sit error voluptatem.
-                  </p>
-                </div>
-              </div>
-              <div className="p-8">
-                <div className="max-w-md text-center">
-                  <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 rounded-full bg-indigo-50 sm:w-16 sm:h-16">
-                    <svg
-                      className="w-8 h-8 text-deep-purple-accent-400 sm:w-12 sm:h-12"
-                      stroke="currentColor"
-                      viewBox="0 0 52 52"
-                    >
-                      <polygon
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        fill="none"
-                        points="29 13 14 29 25 29 23 39 38 23 27 23"
-                      />
-                    </svg>
-                  </div>
-                  <h6 className="mb-2 font-semibold leading-5">Disrupt inspire</h6>
-                  <p className="mb-3 text-sm text-gray-900">
-                    Storage shed, troughs feed bale manure, is garden wheat oats at
-                    augers. Bulls at rose garden cucumbers mice sunflower wheat in
-                    pig.
-                  </p>
-                </div>
-              </div>
+  return (
+    <div className=" pt-36 pb-20 bg-[#150e29] border-b border-slate-800">
+      <div className="w-[90%] m-auto ">
+        <h1 className="text-3xl tracking-tighter leading-1 text-white text-center font-extrabold max-md:text-center max-md:text-2xl">
+          Partners and Sponsors
+        </h1>
+        <p className="text-center py-4 text-white text-sm w-[40%] m-auto max-md:w-[90%] max-md:text-xs">
+          Getlinked Hackathon 1.0 is honored to have the following major
+          companies as its partners and sponsors
+        </p>
+        <div className="w-full grid place-items-center py-10 border mt-6 border-[var(--accent-color)] rounded">
+          <div className="w-[50%] grid py-10 grid-cols-3 gap-4 place-items-center max-md:w-[80%]">
+            <div className="">
+              <img
+                src={liberty}
+                alt=""
+                className="object-contain w-36 max-md:w-20"
+              />
+            </div>
+            <div className="">
+              <img src={win} alt="" className="object-contain w-30" />
+            </div>
+            <div className="">
+              <img src={winwise} alt="" className="object-contain w-36" />
+            </div>
+            <div className="">
+              <img
+                src={imf}
+                alt=""
+                className="object-contain w-20 max-md:w-12"
+              />
+            </div>
+            <div className="">
+              <img src={pb} alt="" className="object-contain " />
+            </div>
+            <div className="">
+              <img src={vp} alt="" className="object-contain w-40" />
             </div>
           </div>
-        );
-    
-}
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Partners
+export default Partners;
