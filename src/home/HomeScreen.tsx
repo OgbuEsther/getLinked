@@ -21,6 +21,7 @@ const HomeScreen = () => {
       <Content2 order="order-2 max-md:order-none" img={girl} />
       <Judge />
       <FAQs />
+      <TimeLine />
       {/* <Content2 />
         <hr />
         <Content />
