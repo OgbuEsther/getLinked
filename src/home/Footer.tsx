@@ -1,4 +1,10 @@
 import logo from "../assets/getlinked.png";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { FaXTwitter } from "react-icons/fa6";
+import { BiLogoFacebook } from "react-icons/bi";
+import { BiLogoLinkedin } from "react-icons/bi";
+import { FaLocationDot } from "react-icons/fa6";
+import { FiPhoneCall } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -22,28 +28,51 @@ const Footer = () => {
 
           {/* second nav */}
           <div className="flex flex-col gap-5 text-xs text-white">
-            <h3 className="t">Useful Links</h3>
-            <p>Overview</p>
-            <p>Timeline</p>
-            <p>FAQs</p>
-            <p>Register</p>
-            <p className="flex gap-2 text-[var(--primary-color)]">
+            <h3 className="t font-bold text-[15px] text-[#D434FE]">
+              Useful Links
+            </h3>
+            <p className="cursor-pointer">Overview</p>
+            <p className="cursor-pointer">Timeline</p>
+            <p className="cursor-pointer">FAQs</p>
+            <p className="cursor-pointer">Register</p>
+            <p className="flex gap-2 font-semibold text-[14px] text-[#D434FE] sm:mb-[30px] lg:mb-0">
               Follow us{" "}
-              <span className="text-white flex gap-3">
-                <p>instagram</p>
-                <p>instagram</p>
-                <p>instagram</p>
+              <span className="text-white flex gap-3 ml-[20px] text-[20px]">
+                <p>
+                  <AiOutlineInstagram />
+                </p>
+                <p>
+                  <FaXTwitter />
+                </p>
+                <p>
+                  <BiLogoFacebook />
+                </p>
+                <p>
+                  <BiLogoLinkedin />
+                </p>
               </span>
             </p>
           </div>
 
           {/* third nav */}
           <div className="flex flex-col gap-5 text-xs text-white">
-            <h3 className="t">contact us</h3>
-            <p>Overview</p>
-            <p>Timeline</p>
-            <p>FAQs</p>
-            <p>Register</p>
+            <h3 className="font-bold text-[15px] text-[#D434FE] ">
+              Contact Us
+            </h3>
+            <p className="flex font-semibold text-[15px] items-center">
+              <FiPhoneCall />{" "}
+              <span className="ml-[20px] font-light text-sm">
+                +234 6707653444
+              </span>
+            </p>
+            <p className="flex font-semibold text-[15px]">
+              <FaLocationDot />{" "}
+              <span className="ml-[20px] font-light  text-sm/10">
+                27,Alara Street <br />
+                Yaba 100012 <br />
+                Lagos State
+              </span>
+            </p>
           </div>
         </div>
 
