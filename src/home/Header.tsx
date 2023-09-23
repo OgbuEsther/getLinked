@@ -1,206 +1,110 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import logo from "../../assets/getlinked.png";
+import close from "../../assets/close.svg";
+import navIcon from "../../assets/navIcon.svg";
+import Button from "../../components/props/Button";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [show, setShow] = useState<boolean>(false);
 
-        
-  
+  const navigation = [
+    { title: "Timeline", path: "#timeline" },
+    { title: "Overview", path: "#overview" },
+    { title: "FAQs", path: "#faq" },
+    { title: "Contact", path: "contact" },
+  ];
 
   return (
-    <div className="bg-[#150E28] w-[100%]">
-      <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-[90%] lg:max-w-[90%]-xl md:px-24 lg:px-8">
-        <div className="relative flex items-center justify-between">
-          <a
-            href="/"
-            aria-label="Company"
-            title="Company"
-            className="inline-flex items-center"
+    <header className="h-[10vh] bg-[var(--primary-color)] border-b border-slate-800">
+      <div className="w-[90%] flex justify-between items-center  m-auto h-full ">
+        {/* logo */}
+        <img src={logo} alt="logo" loading="lazy" width={120} />
+
+        {/* navs s */}
+        <nav>
+          <div
+            className={`flex-1 pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              show ? "block" : "hidden"
+            }`}
           >
-         
-            <span className="ml-2 text-xl font-bold tracking-wide text-gray-100">
-              get<span className='text-[#D434FE]'>Linked</span>
-            </span>
-          </a>
-          <ul className="flex items-center hidden space-x-8 lg:flex">
-            <li>
-              <a
-                href="/"
-                aria-label="Our product"
-                title="Our product"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Timeline
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                aria-label="Our product"
-                title="Our product"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Overview
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                aria-label="Product pricing"
-                title="Product pricing"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                FAQs
-              </a>
-            </li>
-            <li>
-              <Link to="/contact">
-                <a
-                href=""
-                aria-label="About us"
-                title="About us"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Contact
-              </a>
-              </Link>
-            
-            </li>
-            <li>
-            <Link to="/auth" >
-            <button
-                 
-                 className="inline-flex items-center p-[20px] justify-center w-auto h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 bg-gradient-to-r from-[#D434FE] to-[#903AFF]  hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-               >
-                 Register
-               </button>
-            </Link>
-          
-            </li>
-          </ul>
-          <div className="lg:hidden bg-[#150E28]">
-            <button
-              aria-label="Open Menu"
-              title="Open Menu"
-              className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
-              onClick={() => setIsMenuOpen(true)}
-            >
-              <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
-                <path
-                  fill="currentColor"
-                  d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
-                />
-                <path
-                  fill="currentColor"
-                  d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
-                />
-                <path
-                  fill="currentColor"
-                  d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
-                />
-              </svg>
-            </button>
-            {isMenuOpen && (
-              <div className="absolute z-50 top-0 left-0 w-full bg-[#150E28]">
-                <div className="p-5 bg-white border rounded shadow-sm">
-                  <div className="flex items-center justify-between mb-4">
-                    <div>
-                      <a
-                        href="/"
-                        aria-label="Company"
-                        title="Company"
-                        className="inline-flex items-center"
-                      >
-                       
-                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
-                        get<span className='text-[#D434FE]'>Linked</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div>
-                      <button
-                        aria-label="Close Menu"
-                        title="Close Menu"
-                        className="p-2 -mt-2 -mr-2 transition duration-200 rounded  hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
-                          <path
-                            fill="currentColor"
-                            d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                  <nav>
-                    <ul className="space-y-4">
-                      <li>
-                        <a
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Timeline
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          Overview
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/"
-                          aria-label="Product pricing"
-                          title="Product pricing"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          FAQs
-                        </a>
-                      </li>
-                      <li>
-                      <Link to="/contact" >
-                <a
-                href=""
-                aria-label="About us"
-                title="About us"
-                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-teal-accent-400"
-              >
-                Contact
-              </a>
-              </Link>
-                      </li>
-                      <li>
-                         <Link to="/auth" >
-                         <button
-                 
-                 className="inline-flex items-center p-[20px] justify-center w-auto h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 bg-gradient-to-r from-[#D434FE] to-[#903AFF]  hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-               >
-                 Register
-               </button>
-                         </Link>
-               
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
+            <ul className="justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
+              {navigation.map((item, idx) => {
+                return (
+                  <li key={idx} className="text-gray-700 ">
+                    <a
+                      href={item.path}
+                      className="block text-white text-sm cursor-pointer"
+                    >
+                      {item.title}
+                    </a>
+                  </li>
+                );
+              })}
+
+              <div className="items-center gap-x-6 md:flex md:space-y-0">
+                <Button title="register" path="auth" padding="py-[8px] px-6 " />
               </div>
-            )}
+            </ul>
           </div>
+        </nav>
+        {show ? (
+          <div className="w-full h-screen top-0 left-0 z-20 fixed flex items-center justify-center bg-[var(--primary-color)]">
+            <div className="w-[90%] h-[80%] ">
+              <div className="w-full flex justify-end">
+                <img
+                  src={close}
+                  alt="close"
+                  loading="lazy"
+                  onClick={() => {
+                    setShow(!show);
+                  }}
+                  className="cursor-pointer"
+                />
+              </div>
+
+              <nav className="mt-8">
+                {navigation.map((item, idx) => {
+                  return (
+                    <nav key={idx}>
+                      <p
+                        id={item.path}
+                        className="block py-2 text-white text-base font-medium cursor-pointer"
+                      >
+                        {item.title}
+                      </p>
+                    </nav>
+                  );
+                })}
+              </nav>
+              <NavLink to="auth">
+                <button
+                  style={{
+                    background:
+                      "linear-gradient(270deg, #903AFF 0%, #D434FE 56%, #FF26B9 100%, #FE34B9 100%)",
+                  }}
+                  className="mt-8 block py-3 px-9 text-base  text-center text-white hover:text-white rounded-[4px] shadow md:inline"
+                >
+                  Register
+                </button>
+              </NavLink>
+            </div>
+          </div>
+        ) : null}
+
+        <div className="md:hidden">
+          <img
+            src={navIcon}
+            alt="nav"
+            onClick={() => {
+              setShow(!show);
+            }}
+            className="cursor-pointer"
+          />
         </div>
       </div>
-    </div>
+    </header>
   );
+};
 
-  
-  
-}
-
-export default Header
+export default Header;
