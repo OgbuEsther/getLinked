@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "../assets/getlinked.png";
 import close from "../assets/close.svg";
 import flare from "../assets/Purple-Lens-Flare.svg";
@@ -17,8 +17,29 @@ const Header = () => {
     // { title: "Contact", path: "contact" },
   ];
 
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="relative h-[10vh] bg-[var(--primary-color)] border-b border-slate-800">
+    <header
+      className={`sticky top-0 z-50 h-[10vh] bg-[var(--primary-color)] border-b border-slate-800 ${
+        isScrolled ? "bg-opacity-70" : ""
+      }`}
+    >
       {/* flare */}
       <div>
         <img
