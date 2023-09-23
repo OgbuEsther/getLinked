@@ -1,7 +1,7 @@
 import que from "../../assets/question.png";
 import { faqsList } from "../components/Blocks/home/faq";
 
-import FaqsCard from "../../components/props/Accordion";
+import FaqsCard from "../components/props/Accordion";
 
 const FAQs = () => {
   return (
