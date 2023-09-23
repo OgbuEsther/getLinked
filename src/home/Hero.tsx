@@ -1,6 +1,6 @@
 import line from "../assets/line.svg";
-import HeroImg from "../components/blocks/home/HeroImg";
-import HeroRight from "../components/blocks/home/HeroRight";
+import HeroImg from "../components/Blocks/home/HeroImg";
+import HeroRight from "../components/Blocks/home/HeroRight";
 import Typewriter from "typewriter-effect";
 
 const Hero = () => {
