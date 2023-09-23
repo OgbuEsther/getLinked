@@ -1,107 +1,62 @@
-import React from "react";
+import check from "../assets/check.svg";
+import secure from "../assets/secure.png";
 
 const PrivacyPolicy = () => {
-  const plans = [
-    {
-      name: "Enterprise",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      price: 32,
-      isMostPop: true,
-      features: [
-        "Curabitur faucibus",
-        "massa ut pretium maximus",
-        "Sed posuere nisi",
-        "Pellentesque eu nibh et neque",
-        "Suspendisse a leo",
-        "Praesent quis venenatis ipsum",
-        "Duis non diam vel tortor",
-      ],
-    },
-    {
-      name: "Startup",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      price: 12,
-      isMostPop: false,
-      features: [
-        "Curabitur faucibus",
-        "massa ut pretium maximus",
-        "Sed posuere nisi",
-        "Pellentesque eu nibh et neque",
-        "Suspendisse a leo",
-        "Praesent quis venenatis ipsum",
-        "Duis non diam vel tortor",
-      ],
-    },
-  ];
-
   return (
-    <section className="relative py-14 bg-gray-900">
-      <div
-        className="absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[400px]"
-        style={{
-          background:
-            "linear-gradient(106.89deg, rgba(192, 132, 252, 0.11) 15.73%, rgba(14, 165, 233, 0.41) 15.74%, rgba(232, 121, 249, 0.26) 56.49%, rgba(79, 70, 229, 0.4) 115.91%)",
-        }}
-      ></div>
-      <div className="relative max-w-screen-xl mx-auto text-gray-300 sm:px-4 md:px-8">
-        <div className="max-w-xl mx-auto space-y-3 px-4 sm:text-center sm:px-0">
-          <h3 className="text-cyan-400 font-semibold">Pricing</h3>
-          <p className="text-white text-3xl font-semibold sm:text-4xl">
-            Pay as you grow
+    <div className="bg-[#120b29] py-20">
+      <div className="w-[90%] m-auto grid grid-cols-2 max-md:grid-cols-1">
+        <div>
+          <h2 className="text-3xl tracking-tighter leading-1 text-white font-extrabold max-md:text-center max-md:text-2xl">
+            Privacy policy and <br />{" "}
+            <span className="text-[var(--accent-color)]">Terms</span>
+          </h2>
+          <p className="py-5 text-gray-300 text-xs w-[60%]  max-md:w-full max-md:text-center">
+            Last updated on September 12, 2023
           </p>
-          <div className="max-w-xl">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              efficitur consequat nunc.
+          <p className="py-5 text-white text-xs w-[60%]  max-md:w-full max-md:text-center">
+            Below are our privacy & policy, which outline a lot of goodies. it’s
+            our aim to always take of our participant
+          </p>
+          {/* box */}
+          <div className="py-8 px-10 border rounded border-[var(--accent-color)] w-[75%] shadow-md max-md:m-auto max-md:w-[95%]">
+            <p className="text-gray-300 text-xs leading-loose max-md:text-center">
+              At getlinked tech Hackathon 1.0, we value your privacy and are
+              committed to protecting your personal information. This Privacy
+              Policy outlines how we collect, use, disclose, and safeguard your
+              data when you participate in our tech hackathon event. By
+              participating in our event, you consent to the practices described
+              in this policy.
             </p>
+
+            <h3 className="pt-4 text-[var(--accent-color)] tracking-tighter font-semibold">
+              Licensing Policy
+            </h3>
+            <p className="pt-2 text-white text-xs w-[60%]  max-md:w-full ">
+              Here are terms of our Standard License:
+            </p>
+            <div className="flex gap-3 py-3">
+              <img src={check} alt="" />
+              <p className="text-gray-300 text-xs leading-loose">
+                The Standard License grants you a non-exclusive right to
+                navigate and register for our event
+              </p>
+            </div>
+            <div className="flex gap-3 py-3">
+              <img src={check} alt="" />
+              <p className="text-gray-300 text-xs leading-loose">
+                You are licensed to use the item available at any free source
+                sites, for your project developement
+              </p>
+            </div>
           </div>
         </div>
-        <div className="mt-16 justify-center sm:flex">
-          {plans.map((item, idx) => (
-            <div
-              key={idx}
-              className={`relative flex-1 flex items-stretch flex-col mt-6 border-2 sm:mt-0 sm:rounded-xl sm:max-w-md ${
-                item.isMostPop
-                  ? "bg-gray-900 border-cyan-400 border-x-0 sm:border-x-2"
-                  : "border-transparent"
-              }`}
-            >
-              <div className="p-4 py-8 space-y-4 border-b border-gray-700 md:p-8">
-                <span className="text-gray-200 font-medium">{item.name}</span>
-                <div className="text-cyan-400 text-3xl font-semibold">
-                  ${item.price} <span className="text-xl font-normal">/mo</span>
-                </div>
-                <p className="text-gray-400">{item.desc}</p>
-                <button className="px-3 py-3 rounded-lg w-full font-semibold text-sm duration-150 text-white bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700">
-                  Get Started
-                </button>
-              </div>
-              <ul className="p-4 py-8 space-y-3 md:p-8">
-                {item.features.map((featureItem, idx) => (
-                  <li key={idx} className="flex items-center gap-5">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className={`h-5 w-5 ${
-                        item.isMostPop ? "text-cyan-600" : ""
-                      }`}
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    {featureItem}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+
+        {/* bottom */}
+        <div className=" flex flex-col justify-end max-md:items-center max-md:pt-12">
+          <img src={secure} alt="" className="w-[75%] " />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -1,6 +1,7 @@
 import { FC } from "react";
 import immage from "../assets/analytic.png";
 import Button from "../components/props/Button";
+import flare from "../assets/Purple-Lens-Flare.svg";
 import Content from "./Content";
 
 type contentData = {
@@ -10,7 +11,18 @@ type contentData = {
 
 const Judge = () => {
   return (
-    <div className="border-b border-slate-800">
+    <div className="border-b border-slate-800 relative">
+      {/* flare */}
+      <img
+        src={flare}
+        className="absolute"
+        style={{ top: 300, height: "80vh", width: "60%" }}
+      />
+      <img
+        src={flare}
+        className="absolute"
+        style={{ top: 300, right: 700, height: "80vh", width: "60%" }}
+      />
       <div className="w-[90%] m-auto py-10 grid grid-cols-2 max-md:grid-cols-1 ">
         <div className="flex items-center max-md:justify-center">
           <img src={immage} alt="" className="w-[80%] object-contain " />
