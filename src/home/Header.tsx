@@ -111,6 +111,25 @@ const Header = () => {
                     </nav>
                   );
                 })}
+
+                <NavLink
+                  to="/contact"
+                  style={({ isActive }) => {
+                    return {
+                      textDecoration: isActive ? "none" : "none",
+
+                      textDecorationLine: isActive ? "none" : "",
+                      background: isActive
+                        ? "linear-gradient(270deg, #903AFF 0%, #D434FE 56%, #FF26B9 100%, #FE34B9 100%)"
+                        : "none",
+                      color: isActive ? "transparent" : "white",
+                      WebkitBackgroundClip: isActive ? "text" : "text",
+                      backgroundClip: isActive ? "text" : "text",
+                    };
+                  }}
+                >
+                  Contact
+                </NavLink>
               </nav>
               <NavLink to="auth">
                 <button
