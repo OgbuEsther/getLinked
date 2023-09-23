@@ -82,8 +82,8 @@ const SIgnIn = () => {
     <div>
       {showPopUp && <PopUp OnClick={NotShow} />}
       {isLoading ? (
-        <div className="fixed inset-0 flex justify-center items-center bg-[#150e2874]">
-          <RingLoader color="#4A90E2" size={50} />
+        <div className="fixed inset-0 flex justify-center items-center bg-purple-400">
+          <RingLoader color="#150E28" size={60} />
         </div>
       ) : (
         <section className="bg-[#150E28]">
