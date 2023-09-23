@@ -61,7 +61,7 @@ const SIgnIn = () => {
   return (
     <div className="">
       <section className="bg-[#150E28]">
-        <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
+        <div className="lg:grid lg:h-screen lg:grid-cols-12">
           <section className="relative flex lg:h-screen h-30 items-end lg:col-span-5 xl:col-span-6 bg-hero bg-left w-full">
             <img
               alt="Night"
@@ -73,8 +73,8 @@ const SIgnIn = () => {
             <img className="absolute top-10 left-20" src={star} alt="" />
           </section>
 
-          <main className=" lg:h-screen px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
-            <div className="max-w-xl lg:max-w-3xl shadow-2xl p-[70px]">
+          <main className="sm:w-[100%]  lg:h-screen px-4 py-4 sm:px-12 lg:col-span-7 lg:px-6 lg:py-6 xl:col-span-6">
+            <div className="min-w-xl lg:min-w-3xl md:p-[70px] sm:p-0 shadow-2xl sm:w-full sm:h-full">
               <div>
                 <h3 className="text-[#D434FE] text-2xl font-bold sm:text-3xl">
                   Register
@@ -88,7 +88,7 @@ const SIgnIn = () => {
               </div>
               <form
                 action="#"
-                className="lg:mt-8 lg:grid lg:grid-cols-6 lg:gap-6 sm:flex sm:flex-col"
+                className="lg:mt-8 lg:grid lg:grid-cols-6 lg:gap-6 sm:flex sm:flex-col sm:w-[100%]"
               >
                 <div className="col-span-6 sm:col-span-3">
                   <div>
