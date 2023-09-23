@@ -1,8 +1,8 @@
 import { useState } from "react";
-import logo from "../../assets/getlinked.png";
-import close from "../../assets/close.svg";
-import navIcon from "../../assets/navIcon.svg";
-import Button from "../../components/props/Button";
+import logo from "../assets/getlinked.png";
+import close from "../assets/close.svg";
+import navIcon from "../assets/navIcon.svg";
+import Button from "../components/props/Button";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
