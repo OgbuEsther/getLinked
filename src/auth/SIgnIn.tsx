@@ -245,34 +245,17 @@ const SIgnIn = () => {
                 </div>
 
                 <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
-                  {category !== 0 &&
-                  email !== "" &&
-                  phone_number !== "" &&
-                  team_name !== "" &&
-                  project_topic !== "" ? (
-                    <button
-                      disabled
-                      style={{
-                        background:
-                          "linear-gradient(270deg, #903AFF 0%, #D434FE 56%, #FF26B9 100%, #FE34B9 100%)",
-                      }}
-                      className="cursor-not-allowed inline-flex items-center p-[20px] justify-center sm:w-auto md:w-[700px] h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md mt-[20px]  hover:bg-gradient-to-r from-[#D434FE] to-[#903AFF] focus:shadow-outline focus:outline-none"
-                    >
-                      {isLoading ? "Signing Up..." : "Submit"}
-                    </button>
-                  ) : (
-                    <button
-                      disabled={isLoading}
-                      style={{
-                        background:
-                          "linear-gradient(270deg, #903AFF 0%, #D434FE 56%, #FF26B9 100%, #FE34B9 100%)",
-                      }}
-                      onClick={registerTeam}
-                      className="inline-flex items-center p-[20px] justify-center sm:w-auto md:w-[700px] h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md mt-[20px]  hover:bg-gradient-to-r from-[#D434FE] to-[#903AFF] focus:shadow-outline focus:outline-none"
-                    >
-                      {isLoading ? "Signing Up..." : "Submit"}
-                    </button>
-                  )}
+                  <button
+                    disabled={isLoading}
+                    style={{
+                      background:
+                        "linear-gradient(270deg, #903AFF 0%, #D434FE 56%, #FF26B9 100%, #FE34B9 100%)",
+                    }}
+                    onClick={registerTeam}
+                    className="inline-flex items-center p-[20px] justify-center sm:w-auto md:w-[700px] h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md mt-[20px]  hover:bg-gradient-to-r from-[#D434FE] to-[#903AFF] focus:shadow-outline focus:outline-none"
+                  >
+                    {isLoading ? "Signing Up..." : "Submit"}
+                  </button>
                 </div>
               </form>
             </div>
