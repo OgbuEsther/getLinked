@@ -3,7 +3,10 @@ import Timeline from "../components/Blocks/home/TimeLine";
 
 const TimeLine = () => {
   return (
-    <div className=" pt-20 pb-20 bg-[#150e29] border-b border-slate-800">
+    <div
+      id="timeline"
+      className=" pt-20 pb-20 bg-[#150e29] border-b border-slate-800"
+    >
       <div className="w-[90%] m-auto ">
         <h1 className="text-3xl tracking-tighter leading-1 text-white text-center font-extrabold max-md:text-center max-md:text-2xl">
           Timeline
