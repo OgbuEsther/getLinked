@@ -22,6 +22,7 @@ const HomeScreen = () => {
       <Judge />
       <FAQs />
       <TimeLine />
+      <Prizes />
       {/* <Content2 />
         <hr />
         <Content />
