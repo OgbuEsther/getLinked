@@ -33,9 +33,8 @@ const Header = () => {
       </div>
       <div className="w-[90%] flex justify-between items-center  m-auto h-full ">
         {/* logo */}
-        <Link to="">
-          <img src={logo} alt="logo" loading="lazy" width={120} />
-        </Link>
+
+        <img src={logo} alt="logo" loading="lazy" width={120} />
 
         {/* navs s */}
         <nav>
