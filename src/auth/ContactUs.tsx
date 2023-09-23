@@ -56,7 +56,7 @@ const ContactUs = () => {
   return (
     <div className="h-screen">
       {showPopUp && <PopUp OnClick={NotShow} />}
-      <main className="w-[100%] h-[calc(100vh-10vh)] flex bg-[#150E28] items-center fixed bg-hero bg-left-top bg-no-repeat">
+      <main className="w-[100%] h-[calc(100vh-10vh)] flex bg-[#150E28] items-center bg-hero bg-left-top bg-no-repeat">
         <div className="relative flex-1 hidden items-center justify-center h-screen  lg:flex">
           <div className="relative z-10 w-full max-w-md">
             {/* <span className="ml-2 text-xl font-bold tracking-wide text-gray-100">
