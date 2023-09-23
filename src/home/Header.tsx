@@ -5,6 +5,7 @@ import flare from "../assets/Purple-Lens-Flare.svg";
 import navIcon from "../assets/navIcon.svg";
 import Button from "../components/props/Button";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [show, setShow] = useState<boolean>(false);
@@ -80,12 +81,12 @@ const Header = () => {
                 {navigation.map((item, idx) => {
                   return (
                     <nav key={idx}>
-                      <a
-                        href={item.path}
+                      <Link
+                        to={item.path}
                         className="block py-2 text-white text-base font-medium cursor-pointer"
                       >
                         {item.title}
-                      </a>
+                      </Link>
                     </nav>
                   );
                 })}
