@@ -7,7 +7,7 @@ interface IProps {
 }
 const PopUp: React.FC<IProps> = ({ OnClick }: any) => {
   return (
-    <div className="absolute top-0 w-full h-screen bg-[#160e29ea] flex justify-center items-center backdrop-blur-md z-50">
+    <div className="fixed top-0 w-full h-screen bg-[#160e29ea] flex justify-center items-center backdrop-blur-md z-50">
       <div className="w-[300px] md:w-[400px] py-6 md:h-[440px] h-fit border-[1px] border-[#8d26ae] flex justify-center items-center">
         <div className="w-[88%] h-[86%] ">
           <div className="w-full h-[200px]">
