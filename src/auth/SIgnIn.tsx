@@ -3,6 +3,7 @@ import girl from "../assets/auth.png";
 import axios from "axios";
 import Swal from "sweetalert2";
 import star from "../assets/star.svg";
+import PopUp from "../model/pop-up/pop-up";
 const baseUrl = `https://backend.getlinked.ai`;
 
 const SIgnIn = () => {
@@ -17,6 +18,9 @@ const SIgnIn = () => {
   const [project_topic, setProject_topic] = React.useState();
   const [privacy_poclicy_accepted, setPrivacy_poclicy_accepted] =
     React.useState(true);
+
+  //popup
+  const [showPopUp, setShowPopUp] = React.useState(false);
 
   //api consumption (post and get)
   useEffect(() => {
@@ -44,14 +48,15 @@ const SIgnIn = () => {
         privacy_poclicy_accepted,
       })
       .then((res) => {
+        setShowPopUp(true);
         // console.log(res);
-        Swal.fire({
-          position: "center",
-          icon: "success",
-          title: "Team Registration Successfully ",
-          showConfirmButton: false,
-          timer: 2500,
-        });
+        // Swal.fire({
+        //   position: "center",
+        //   icon: "success",
+        //   title: "Team Registration Successfully ",
+        //   showConfirmButton: false,
+        //   timer: 2500,
+        // });
       })
       .catch((err) => {
         console.log(err);
@@ -60,6 +65,7 @@ const SIgnIn = () => {
 
   return (
     <div className="">
+      {showPopUp && <PopUp />}
       <section className="bg-[#150E28]">
         <div className="lg:grid lg:h-screen lg:grid-cols-12">
           <section className="relative flex lg:h-screen h-30 items-end lg:col-span-5 xl:col-span-6 bg-hero bg-left w-full">
