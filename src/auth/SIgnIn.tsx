@@ -63,9 +63,13 @@ const SIgnIn = () => {
       });
   };
 
+  const NotShow = () => {
+    setShowPopUp(false);
+  };
+
   return (
     <div className="">
-      {showPopUp && <PopUp />}
+      {showPopUp && <PopUp OnClick={NotShow} />}
       <section className="bg-[#150E28]">
         <div className="lg:grid lg:h-screen lg:grid-cols-12">
           <section className="relative flex lg:h-screen h-30 items-end lg:col-span-5 xl:col-span-6 bg-hero bg-left w-full">

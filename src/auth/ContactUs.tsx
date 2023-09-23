@@ -42,10 +42,13 @@ const ContactUs = () => {
         console.log(err);
       });
   };
+  const NotShow = () => {
+    setShowPopUp(false);
+  };
 
   return (
     <div>
-      {showPopUp && <PopUp />}
+      {showPopUp && <PopUp OnClick={NotShow} />}
       <main className="w-[100%] flex bg-[#150E28] items-center">
         <div className="relative flex-1 hidden items-center justify-center h-screen  lg:flex">
           <div className="relative z-10 w-full max-w-md">
