@@ -44,11 +44,14 @@ const Header = () => {
       <div>
         <img
           src={flare}
-          alt=""
+          alt="logo"
+          loading="lazy"
+          width={120}
           style={{
             position: "absolute",
             top: -250,
             left: -200,
+            opacity: 0.4,
           }}
         />
       </div>

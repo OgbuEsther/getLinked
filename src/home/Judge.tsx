@@ -21,7 +21,13 @@ const Judge = () => {
       <img
         src={flare}
         className="absolute"
-        style={{ top: 300, right: 700, height: "80vh", width: "60%" }}
+        style={{
+          top: 300,
+          right: 700,
+          height: "80vh",
+          width: "60%",
+          opacity: 0.4,
+        }}
       />
       <div className="w-[90%] m-auto py-10 grid grid-cols-2 max-md:grid-cols-1 ">
         <div className="flex items-center max-md:justify-center">

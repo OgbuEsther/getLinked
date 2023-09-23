@@ -81,180 +81,186 @@ const SIgnIn = () => {
   return (
     <div>
       {showPopUp && <PopUp OnClick={NotShow} />}
-      {isLoading ? (
-        <div className="fixed inset-0 flex justify-center items-center bg-purple-400">
-          <RingLoader color="#150E28" size={60} />
-        </div>
-      ) : (
-        <section className="bg-[#150E28]">
-          <div className="lg:grid lg:grid-cols-12">
-            <section className="relative flex  h-30 items-end lg:col-span-5 xl:col-span-6 bg-hero bg-left w-full">
-              <img
-                alt="Night"
-                src={girl}
-                className="inset-0 h-full w-full object-cover opacity-80"
-              />
-              <img className="absolute top-[85%] right-20" src={star} alt="" />
-              <img className="absolute top-[90%] left-20" src={star} alt="" />
-              <img className="absolute top-10 left-20" src={star} alt="" />
-            </section>
 
-            <main className="sm:w-[100%] px-4 py-4 sm:px-12 lg:col-span-7 lg:px-6 lg:py-6 xl:col-span-6">
-              <div className="min-w-xl lg:min-w-3xl md:p-[70px] sm:p-0 shadow-2xl sm:w-full sm:h-full">
-                <div>
-                  <h3 className="text-[#D434FE] text-2xl font-bold sm:text-3xl">
-                    Register
-                  </h3>
-                  <br />
-                  <br />
-                  <p className="text-white mb-[20px]">
-                    Be part of this movement
-                  </p>
-                  <h3 className="text-2xl text-white font-bold sm:text-3xl">
-                    CREATE YOUR ACCOUNT
-                  </h3>
+      <section className="bg-[#150E28]">
+        <div className="lg:grid lg:grid-cols-12">
+          <section className="relative flex  h-30 items-end lg:col-span-5 xl:col-span-6 bg-hero bg-left w-full">
+            <img
+              alt="Night"
+              src={girl}
+              className="inset-0 h-full w-full object-cover opacity-80"
+            />
+            <img className="absolute top-[85%] right-20" src={star} alt="" />
+            <img className="absolute top-[90%] left-20" src={star} alt="" />
+            <img className="absolute top-10 left-20" src={star} alt="" />
+          </section>
+
+          <main className="sm:w-[100%] px-4 py-4 sm:px-12 lg:col-span-7 lg:px-6 lg:py-6 xl:col-span-6">
+            <div className="min-w-xl lg:min-w-3xl md:p-[70px] sm:p-0 shadow-2xl sm:w-full sm:h-full">
+              <div>
+                <h3 className="text-[#D434FE] text-2xl font-bold sm:text-3xl">
+                  Register
+                </h3>
+                <br />
+                <br />
+                <p className="text-white mb-[20px]">Be part of this movement</p>
+                <h3 className="text-2xl text-white font-bold sm:text-3xl">
+                  CREATE YOUR ACCOUNT
+                </h3>
+              </div>
+              <form
+                action="#"
+                className="lg:mt-8 lg:grid lg:grid-cols-6 lg:gap-6 sm:flex sm:flex-col sm:w-[100%]"
+              >
+                <div className="col-span-6 sm:col-span-3">
+                  <div>
+                    <label className="block py-3 text-white">Team's Name</label>
+                    <div className="flex items-center p-2 border rounded-md">
+                      <input
+                        onChange={(e: any) => {
+                          setTeam_name(e.target.value);
+                        }}
+                        placeholder="Enter the name of your group"
+                        className="w-full p-1 ml-3 text-white outline-none bg-transparent"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <form
-                  action="#"
-                  className="lg:mt-8 lg:grid lg:grid-cols-6 lg:gap-6 sm:flex sm:flex-col sm:w-[100%]"
-                >
-                  <div className="col-span-6 sm:col-span-3">
-                    <div>
-                      <label className="block py-3 text-white">
-                        Team's Name
-                      </label>
-                      <div className="flex items-center p-2 border rounded-md">
-                        <input
-                          onChange={(e: any) => {
-                            setTeam_name(e.target.value);
-                          }}
-                          placeholder="Enter the name of your group"
-                          className="w-full p-1 ml-3 text-white outline-none bg-transparent"
-                        />
-                      </div>
+                <div className="col-span-6 sm:col-span-3">
+                  <div>
+                    <label className="block py-3 text-white">Phone</label>
+                    <div className="flex items-center p-2 border rounded-md">
+                      <input
+                        onChange={(e: any) => {
+                          setPhone_number(e.target.value);
+                        }}
+                        placeholder="Enter your phone number"
+                        className="w-full p-1 ml-3 text-white outline-none bg-transparent"
+                      />
                     </div>
                   </div>
-                  <div className="col-span-6 sm:col-span-3">
-                    <div>
-                      <label className="block py-3 text-white">Phone</label>
-                      <div className="flex items-center p-2 border rounded-md">
-                        <input
-                          onChange={(e: any) => {
-                            setPhone_number(e.target.value);
-                          }}
-                          placeholder="Enter your phone number"
-                          className="w-full p-1 ml-3 text-white outline-none bg-transparent"
-                        />
-                      </div>
+                </div>
+                <div className="col-span-6 sm:col-span-3">
+                  <div>
+                    <label className="block py-3 text-white">Email</label>
+                    <div className="flex items-center p-2 border rounded-md">
+                      <input
+                        onChange={(e: any) => {
+                          setEmail(e.target.value);
+                        }}
+                        type="email"
+                        placeholder="Enter your email address"
+                        className="w-full pr-3 p-1 ml-3 text-white outline-none bg-transparent"
+                      />
                     </div>
                   </div>
-                  <div className="col-span-6 sm:col-span-3">
-                    <div>
-                      <label className="block py-3 text-white">Email</label>
-                      <div className="flex items-center p-2 border rounded-md">
-                        <input
-                          onChange={(e: any) => {
-                            setEmail(e.target.value);
-                          }}
-                          type="email"
-                          placeholder="Enter your email address"
-                          className="w-full pr-3 p-1 ml-3 text-white outline-none bg-transparent"
-                        />
-                      </div>
+                </div>
+                <div className="col-span-6 sm:col-span-3">
+                  <div>
+                    <label className="block py-3 text-white">
+                      Project Topic
+                    </label>
+                    <div className="flex items-center p-2 border rounded-md">
+                      <input
+                        onChange={(e: any) => {
+                          setProject_topic(e.target.value);
+                        }}
+                        placeholder="What is your group project topic"
+                        className="w-[650px]  ml-3 text-white outline-none bg-transparent"
+                      />
                     </div>
                   </div>
-                  <div className="col-span-6 sm:col-span-3">
-                    <div>
-                      <label className="block py-3 text-white">
-                        Project Topic
-                      </label>
-                      <div className="flex items-center p-2 border rounded-md">
-                        <input
-                          onChange={(e: any) => {
-                            setProject_topic(e.target.value);
-                          }}
-                          placeholder="What is your group project topic"
-                          className="w-[650px]  ml-3 text-white outline-none bg-transparent"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-span-6 sm:col-span-3">
-                    <div>
-                      <label className="block py-3 text-white">Category</label>
-                      <div className="flex items-center p-2 border rounded-md">
-                        <select
-                          className="w-full p-1 ml-3 text-white outline-none bg-transparent"
-                          onChange={(e: any) => {
-                            setCategory(e.target.value);
-                          }}
-                          name=""
-                          id=""
-                        >
-                          <option className="text-black" value="">
-                            Select your category
-                          </option>
+                </div>
+                <div className="col-span-6 sm:col-span-3">
+                  <div>
+                    <label className="block py-3 text-white">Category</label>
+                    <div className="flex items-center p-2 border rounded-md">
+                      <select
+                        className="w-full p-1 ml-3 text-white outline-none bg-transparent"
+                        onChange={(e: any) => {
+                          setCategory(e.target.value);
+                        }}
+                        name=""
+                        id=""
+                      >
+                        <option className="text-black" value="">
+                          Select your category
+                        </option>
 
-                          {categories?.map((el: any) => (
-                            <option key={el?.id}>{el?.id}</option>
-                          ))}
-                        </select>
-                      </div>
+                        {categories?.map((el: any) => (
+                          <option key={el?.id}>{el?.id}</option>
+                        ))}
+                      </select>
                     </div>
                   </div>
-                  <div className="col-span-6 sm:col-span-3">
-                    <div>
-                      <label className="block py-3 text-white">
-                        Group Size
-                      </label>
-                      <div className="flex items-center p-2 border rounded-md">
-                        <select
-                          className="w-full p-1 ml-3 text-white outline-none bg-transparent"
-                          onChange={(e: any) => {
-                            setGroup_size(e.target.value);
-                          }}
-                          name=""
-                          id=""
-                        >
-                          <option value={1}>Select</option>
-                          <option value={2}>1</option>
-                          <option value={3}>2</option>
-                          <option value={4}>3</option>
-                          <option value={5}>4</option>
-                          <option value={6}>5</option>
-                          {/* <option value="6">6</option>
+                </div>
+                <div className="col-span-6 sm:col-span-3">
+                  <div>
+                    <label className="block py-3 text-white">Group Size</label>
+                    <div className="flex items-center p-2 border rounded-md">
+                      <select
+                        className="w-full p-1 ml-3 text-white outline-none bg-transparent"
+                        onChange={(e: any) => {
+                          setGroup_size(e.target.value);
+                        }}
+                        name=""
+                        id=""
+                      >
+                        <option value={1}>Select</option>
+                        <option value={2}>1</option>
+                        <option value={3}>2</option>
+                        <option value={4}>3</option>
+                        <option value={5}>4</option>
+                        <option value={6}>5</option>
+                        {/* <option value="6">6</option>
                       <option value="7">7</option>
                       <option value="8">8</option>
                       <option value="9">9</option>
                       <option value="10">10</option>
                       <option value="11">11</option> */}
-                        </select>
-                      </div>
+                      </select>
                     </div>
                   </div>
+                </div>
 
-                  <div className="col-span-6">
-                    <p className="text-[#D434FE] text-[14px] w-full italic mb-[20px] font-semibold mt-[20px]">
-                      please review your registration details before submitting
-                    </p>
-                    <label className="flex gap-4">
-                      <input
-                        style={{ backgroundColor: "transparent" }}
-                        onChange={(e: any) => {
-                          setPrivacy_poclicy_accepted(e.target.value);
-                        }}
-                        type="checkbox"
-                        className="h-5 w-5 rounded-md shadow-sm"
-                      />
+                <div className="col-span-6">
+                  <p className="text-[#D434FE] text-[14px] w-full italic mb-[20px] font-semibold mt-[20px]">
+                    please review your registration details before submitting
+                  </p>
+                  <label className="flex gap-4">
+                    <input
+                      style={{ backgroundColor: "transparent" }}
+                      onChange={(e: any) => {
+                        setPrivacy_poclicy_accepted(e.target.value);
+                      }}
+                      type="checkbox"
+                      className="h-5 w-5 rounded-md shadow-sm"
+                    />
 
-                      <span className="text-sm text-white sm:mb-[20px] lg:mb-0">
-                        I agreed with the event terms and conditions and privacy
-                        policy
-                      </span>
-                    </label>
-                  </div>
+                    <span className="text-sm text-white sm:mb-[20px] lg:mb-0">
+                      I agreed with the event terms and conditions and privacy
+                      policy
+                    </span>
+                  </label>
+                </div>
 
-                  <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
+                <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
+                  {category !== 0 &&
+                  email !== "" &&
+                  phone_number !== "" &&
+                  team_name !== "" &&
+                  project_topic !== "" ? (
+                    <button
+                      disabled
+                      style={{
+                        background:
+                          "linear-gradient(270deg, #903AFF 0%, #D434FE 56%, #FF26B9 100%, #FE34B9 100%)",
+                      }}
+                      className="cursor-not-allowed inline-flex items-center p-[20px] justify-center sm:w-auto md:w-[700px] h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md mt-[20px]  hover:bg-gradient-to-r from-[#D434FE] to-[#903AFF] focus:shadow-outline focus:outline-none"
+                    >
+                      {isLoading ? "Signing Up..." : "Submit"}
+                    </button>
+                  ) : (
                     <button
                       disabled={isLoading}
                       style={{
@@ -266,13 +272,13 @@ const SIgnIn = () => {
                     >
                       {isLoading ? "Signing Up..." : "Submit"}
                     </button>
-                  </div>
-                </form>
-              </div>
-            </main>
-          </div>
-        </section>
-      )}
+                  )}
+                </div>
+              </form>
+            </div>
+          </main>
+        </div>
+      </section>
     </div>
   );
 };
