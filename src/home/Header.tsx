@@ -58,7 +58,7 @@ const Header = () => {
               })}
               <li>
                 <NavLink
-                  to="/contact"
+                  to="contact"
                   style={({ isActive }) => {
                     return {
                       textDecoration: isActive ? "none" : "none",
@@ -113,7 +113,7 @@ const Header = () => {
                 })}
 
                 <NavLink
-                  to="/contact"
+                  to="contact"
                   style={({ isActive }) => {
                     return {
                       textDecoration: isActive ? "none" : "none",
