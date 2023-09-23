@@ -14,7 +14,7 @@ const Header = () => {
     { title: "Timeline", path: "#timeline" },
     { title: "Overview", path: "#overview" },
     { title: "FAQs", path: "#faq" },
-    { title: "Contact", path: "contact" },
+    // { title: "Contact", path: "contact" },
   ];
 
   return (
@@ -33,7 +33,9 @@ const Header = () => {
       </div>
       <div className="w-[90%] flex justify-between items-center  m-auto h-full ">
         {/* logo */}
-        <img src={logo} alt="logo" loading="lazy" width={120} />
+        <Link to="">
+          <img src={logo} alt="logo" loading="lazy" width={120} />
+        </Link>
 
         {/* navs s */}
         <nav>
@@ -46,15 +48,35 @@ const Header = () => {
               {navigation.map((item, idx) => {
                 return (
                   <li key={idx} className="text-gray-700 ">
-                    <Link
-                      to={item.path}
+                    <a
+                      href={item.path}
                       className="block text-white text-sm cursor-pointer"
                     >
                       {item.title}
-                    </Link>
+                    </a>
                   </li>
                 );
               })}
+              <li>
+                <NavLink
+                  to="/contact"
+                  style={({ isActive }) => {
+                    return {
+                      textDecoration: isActive ? "none" : "none",
+
+                      textDecorationLine: isActive ? "none" : "",
+                      background: isActive
+                        ? "linear-gradient(270deg, #903AFF 0%, #D434FE 56%, #FF26B9 100%, #FE34B9 100%)"
+                        : "none",
+                      color: isActive ? "transparent" : "white",
+                      WebkitBackgroundClip: isActive ? "text" : "text",
+                      backgroundClip: isActive ? "text" : "text",
+                    };
+                  }}
+                >
+                  Contact
+                </NavLink>
+              </li>
 
               <div className="items-center gap-x-6 md:flex md:space-y-0">
                 <Button title="register" path="auth" padding="py-[8px] px-6 " />
@@ -81,12 +103,12 @@ const Header = () => {
                 {navigation.map((item, idx) => {
                   return (
                     <nav key={idx}>
-                      <Link
-                        to={item.path}
+                      <a
+                        href={item.path}
                         className="block py-2 text-white text-base font-medium cursor-pointer"
                       >
                         {item.title}
-                      </Link>
+                      </a>
                     </nav>
                   );
                 })}
