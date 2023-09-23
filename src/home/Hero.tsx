@@ -12,7 +12,7 @@ const Hero = () => {
           <em className="text-white font-semibold text-2xl max-md:text-base">
             <Typewriter
               options={{
-                loop: false,
+                loop: true,
               }}
               onInit={(typewriter: any) => {
                 typewriter
