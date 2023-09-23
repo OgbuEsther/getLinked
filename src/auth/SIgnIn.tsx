@@ -62,16 +62,15 @@ const SIgnIn = () => {
     <div className="">
       <section className="bg-[#150E28]">
         <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
-          <section className="relative flex h-30 items-end lg:col-span-5 lg:h-full xl:col-span-6 bg-hero">
+          <section className="relative flex lg:h-screen h-30 items-end lg:col-span-5 xl:col-span-6 bg-hero bg-left w-full">
             <img
               alt="Night"
               src={girl}
               className="inset-0 h-full w-full object-cover opacity-80"
             />
             <img className="absolute top-[85%] right-20" src={star} alt="" />
-            <img className="absolute top-100 left-10" src={star} alt="" />
-            <img className="absolute top-10" src={star} alt="" />
-            <img className="absolute top-10" src={star} alt="" />
+            <img className="absolute top-[90%] left-20" src={star} alt="" />
+            <img className="absolute top-10 left-20" src={star} alt="" />
           </section>
 
           <main className=" lg:h-screen px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
@@ -87,7 +86,10 @@ const SIgnIn = () => {
                   CREATE YOUR ACCOUNT
                 </h3>
               </div>
-              <form action="#" className="mt-8 grid grid-cols-6 gap-6 ">
+              <form
+                action="#"
+                className="lg:mt-8 lg:grid lg:grid-cols-6 lg:gap-6 sm:flex sm:flex-col"
+              >
                 <div className="col-span-6 sm:col-span-3">
                   <div>
                     <label className="block py-3 text-white">Team's Name</label>
@@ -198,7 +200,7 @@ const SIgnIn = () => {
                 </div>
 
                 <div className="col-span-6">
-                  <p className="text-[#D434FE] italic mb-[20px] font-semibold">
+                  <p className="text-[#D434FE] text-[14px] w-full italic mb-[20px] font-semibold mt-[20px]">
                     please review your registration details before submitting
                   </p>
                   <label className="flex gap-4">
@@ -210,7 +212,7 @@ const SIgnIn = () => {
                       className="h-5 w-5 rounded-md border-gray-200 bg-white shadow-sm"
                     />
 
-                    <span className="text-sm text-white">
+                    <span className="text-sm text-white mb-[20px]">
                       I agreed with the event terms and conditions and privacy
                       policy
                     </span>
@@ -222,7 +224,7 @@ const SIgnIn = () => {
                     onClick={registerTeam}
                     className="inline-flex items-center p-[20px] justify-center sm:w-auto md:w-[700px] h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md  bg-deep-purple-accent-400 bg-gradient-to-r from-[#D434FE] to-[#903AFF]  hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                   >
-                    Register
+                    Submit
                   </button>
                 </div>
               </form>
