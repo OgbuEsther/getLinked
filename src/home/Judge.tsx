@@ -1,5 +1,5 @@
 import { FC } from "react";
-import immage from "../../assets/analytic.png";
+import immage from "../assets/analytic.png";
 import Button from "../components/props/Button";
 import Content from "./Content";
 

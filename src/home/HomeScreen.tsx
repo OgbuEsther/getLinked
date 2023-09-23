@@ -19,7 +19,7 @@ const HomeScreen = () => {
       <Hero />
       <Content2 order="" img={big} />
       <Content2 order="order-2 max-md:order-none" img={girl} />
-
+      <Judge />
       {/* <Content2 />
         <hr />
         <Content />
