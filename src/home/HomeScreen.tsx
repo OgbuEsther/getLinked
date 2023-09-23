@@ -23,6 +23,7 @@ const HomeScreen = () => {
       <FAQs />
       <TimeLine />
       <Prizes />
+      <Partners />
       {/* <Content2 />
         <hr />
         <Content />
