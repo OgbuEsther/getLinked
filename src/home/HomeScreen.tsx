@@ -16,12 +16,10 @@ import Fade from "react-reveal/Fade";
 const HomeScreen = () => {
   return (
     <div className=" bg-[#150E28] ">
-     
-        <Header />
-     
-    
-        <Hero />
-     
+      <Header />
+
+      <Hero />
+
       <Fade>
         <Content2 order="" img={big} visibility="hidden" />
       </Fade>
