@@ -25,8 +25,12 @@ const PopUp: React.FC<IProps> = ({ OnClick }: any) => {
             <br /> check your mail box for next step 😅
           </div>
           <button
+            style={{
+              background:
+                "linear-gradient(270deg, #903AFF 0%, #D434FE 56%, #FF26B9 100%, #FE34B9 100%)",
+            }}
             onClick={OnClick}
-            className="text-white rounded-[4px] w-full mt-5 h-9 bg-slate-700 text-xs font-[600]"
+            className="text-white rounded-[4px] w-full mt-5 h-9 text-xs font-[600] cursor-pointer"
           >
             Back
           </button>
