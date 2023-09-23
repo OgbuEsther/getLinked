@@ -45,15 +45,14 @@ const ContactUs = () => {
       )
       .then((res) => {
         console.log(res?.data);
-        setShowPopUp(true);
 
-        // Swal.fire({
-        //   position: "center",
-        //   icon: "success",
-        //   title: "mail sent successfully ",
-        //   showConfirmButton: false,
-        //   timer: 2500,
-        // });
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "mail sent successfully ",
+          showConfirmButton: false,
+          timer: 2500,
+        });
       })
       .catch((err) => {
         console.log(err);
@@ -65,7 +64,6 @@ const ContactUs = () => {
 
   return (
     <div className="h-screen">
-      {showPopUp && <PopUp OnClick={NotShow} />}
       {isLoading ? (
         <div className="fixed inset-0 flex justify-center items-center bg-purple-400">
           <RingLoader color="#150E28" size={60} />
