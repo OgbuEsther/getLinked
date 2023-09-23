@@ -1,5 +1,5 @@
 import que from "../../assets/question.png";
-import { faqsList } from "../../components/blocks/home/faq";
+import { faqsList } from "../components/Blocks/home/faq";
 
 import FaqsCard from "../../components/props/Accordion";
 
