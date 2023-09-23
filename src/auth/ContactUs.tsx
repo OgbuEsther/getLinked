@@ -169,7 +169,7 @@ const ContactUs = () => {
                       placeholder="first_name"
                     />
 
-                    <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-transparent p-0.5 text-xs bg-[#D434FE] transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
+                    <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 text-white  p-0.5 text-xs bg-[#D434FE] transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
                       First Name
                     </span>
                   </label>
@@ -186,7 +186,7 @@ const ContactUs = () => {
                       placeholder="phone_number"
                     />
 
-                    <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-transparent p-0.5 text-xs bg-[#D434FE]transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
+                    <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 p-0.5 text-xs bg-[#D434FE] text-white  transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
                       Phone Number
                     </span>
                   </label>
@@ -203,7 +203,7 @@ const ContactUs = () => {
                       placeholder="Mail"
                     />
 
-                    <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-transparent p-0.5 text-xs bg-[#D434FE]transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
+                    <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 p-0.5 text-xs bg-[#D434FE] text-white transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
                       Mail
                     </span>
                   </label>
@@ -220,7 +220,7 @@ const ContactUs = () => {
                       placeholder="Message"
                     />
 
-                    <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-transparent p-0.5 text-xs bg-[#D434FE] transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
+                    <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-transparent p-0.5 text-xs text-white bg-[#D434FE] transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
                       Message
                     </span>
                   </label>
