@@ -71,8 +71,8 @@ const SIgnIn = () => {
     <div>
       {showPopUp && <PopUp OnClick={NotShow} />}
       <section className="bg-[#150E28]">
-        <div className="lg:grid lg:h-screen lg:grid-cols-12">
-          <section className="relative flex lg:h-screen h-30 items-end lg:col-span-5 xl:col-span-6 bg-hero bg-left w-full">
+        <div className="lg:grid lg:grid-cols-12">
+          <section className="relative flex  h-30 items-end lg:col-span-5 xl:col-span-6 bg-hero bg-left w-full">
             <img
               alt="Night"
               src={girl}
@@ -83,7 +83,7 @@ const SIgnIn = () => {
             <img className="absolute top-10 left-20" src={star} alt="" />
           </section>
 
-          <main className="sm:w-[100%]  lg:h-screen px-4 py-4 sm:px-12 lg:col-span-7 lg:px-6 lg:py-6 xl:col-span-6">
+          <main className="sm:w-[100%] px-4 py-4 sm:px-12 lg:col-span-7 lg:px-6 lg:py-6 xl:col-span-6">
             <div className="min-w-xl lg:min-w-3xl md:p-[70px] sm:p-0 shadow-2xl sm:w-full sm:h-full">
               <div>
                 <h3 className="text-[#D434FE] text-2xl font-bold sm:text-3xl">
