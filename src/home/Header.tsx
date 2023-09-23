@@ -14,7 +14,7 @@ const Header = () => {
     { title: "Timeline", path: "#timeline" },
     { title: "Overview", path: "#overview" },
     { title: "FAQs", path: "#faq" },
-    { title: "Contact", path: "/contact" },
+    { title: "Contact", path: "contact" },
   ];
 
   return (
@@ -46,12 +46,12 @@ const Header = () => {
               {navigation.map((item, idx) => {
                 return (
                   <li key={idx} className="text-gray-700 ">
-                    <a
-                      href={item.path}
+                    <Link
+                      to={item.path}
                       className="block text-white text-sm cursor-pointer"
                     >
                       {item.title}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
