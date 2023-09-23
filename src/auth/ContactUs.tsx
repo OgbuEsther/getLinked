@@ -2,6 +2,14 @@ import axios from "axios";
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import PopUp from "../model/pop-up/pop-up";
+import Header from "../home/Header";
+
+import { AiOutlineInstagram } from "react-icons/ai";
+import { FaXTwitter } from "react-icons/fa6";
+import { BiLogoFacebook } from "react-icons/bi";
+import { BiLogoLinkedin } from "react-icons/bi";
+import { FaLocationDot } from "react-icons/fa6";
+import { FiPhoneCall } from "react-icons/fi";
 
 const baseUrl = `https://backend.getlinked.ai`;
 
@@ -47,9 +55,10 @@ const ContactUs = () => {
   };
 
   return (
-    <div>
+    <div className="h-screen">
+      <Header />
       {showPopUp && <PopUp OnClick={NotShow} />}
-      <main className="w-[100%] flex bg-[#150E28] items-center">
+      <main className="w-[100%] h-[calc(100vh-10vh)] flex bg-[#150E28] items-center fixed bg-hero bg-left-top bg-no-repeat">
         <div className="relative flex-1 hidden items-center justify-center h-screen  lg:flex">
           <div className="relative z-10 w-full max-w-md">
             {/* <span className="ml-2 text-xl font-bold tracking-wide text-gray-100">
@@ -77,7 +86,23 @@ const ContactUs = () => {
               </p>
               <br />
               <br />
-              <p className="text-[#D434FE] font-semibold">Share On</p>
+              <p className="flex gap-2 font-semibold text-[14px] text-[#D434FE] sm:mb-[30px] lg:mb-0">
+                Share on{" "}
+                <span className="text-white flex gap-3 ml-[20px] text-[20px]">
+                  <p>
+                    <AiOutlineInstagram />
+                  </p>
+                  <p>
+                    <FaXTwitter />
+                  </p>
+                  <p>
+                    <BiLogoFacebook />
+                  </p>
+                  <p>
+                    <BiLogoLinkedin />
+                  </p>
+                </span>
+              </p>
             </div>
           </div>
           <div className="absolute inset-0 my-auto h-[500px]"></div>
@@ -193,6 +218,24 @@ const ContactUs = () => {
                 >
                   Submit
                 </button>
+
+                <p className="flex gap-2 font-semibold text-[14px] text-[#D434FE] sm:mb-[30px] lg:mb-0 justify-center items-center mt-[20px] lg:hidden sm:flex">
+                  Share on{" "}
+                  <span className="text-white flex gap-3 ml-[20px] text-[20px]">
+                    <p>
+                      <AiOutlineInstagram />
+                    </p>
+                    <p>
+                      <FaXTwitter />
+                    </p>
+                    <p>
+                      <BiLogoFacebook />
+                    </p>
+                    <p>
+                      <BiLogoLinkedin />
+                    </p>
+                  </span>
+                </p>
               </div>
             </form>
           </div>
