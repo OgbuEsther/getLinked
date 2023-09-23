@@ -1,6 +1,6 @@
 import bg from "../assets/bg.png";
 import trophy from "../assets/trophy.png";
-import rewards from "../assets/rewards.png";
+import rewards from "../assets/Rewards.png";
 
 const Prizes = () => {
   return (
