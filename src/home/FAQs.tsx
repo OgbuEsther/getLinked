@@ -1,194 +1,41 @@
-import React from 'react'
-import faq from "../assets/faq.png"
+import que from "../../assets/question.png";
+import { faqsList } from "../../components/blocks/home/faq";
+
+import FaqsCard from "../../components/props/Accordion";
+
 const FAQs = () => {
   return (
-    <div className="space-y-4 mt-[30px] flex flex-col justify-center items-center w-[100%]">
-        <div className='text-left w-[90%]'>
-        <h5 className=" text-4xl font-extrabold leading-none text-white mb-[40px] mt-[30px]">
-              Introduction to getlinked
+    <div id="faq" className="border-b border-gray-800">
+      <div className="w-[90%] m-auto py-14 grid grid-cols-2 max-md:grid-cols-1 max-md:gap-8">
+        <div className="flex flex-col justify-center">
+          <h2 className="text-3xl tracking-tighter leading-1 text-white font-extrabold max-md:text-center max-md:text-2xl">
+            Frequently Ask <br />{" "}
+            <span className="text-[var(--accent-color)]">Question</span>
+          </h2>
+          <p className="py-5 text-white w-[60%]  max-md:w-full max-md:text-center max-md:text-sm">
+            We got answers to the questions that you might want to ask about
+            getlinked Hackathon 1.0
+          </p>
 
-                <br className="hidden md:block" />
-                
-                <span className="inline-block text-deep-purple-accent-400 text-[#D434FE]">
-                tech Hackathon 1.0
-                </span>
-              </h5>
-        <p className='text-white'>We got answers to the questions that you might
-want to ask about getlinked Hackathon 1.0</p>
+          {/* toggle */}
+          <div className="mt-10 ">
+            {faqsList.map((item, idx) => (
+              <FaqsCard key={idx} idx={idx} faqsList={item} />
+            ))}
+          </div>
         </div>
-   <div className='w-[90%] flex justify-between flex-wrap'>
-  <div className='w-[55%]'>
-  <details
-      className="group border-b-2 border-[#D434FE] bg-[#150E28] p-6 [&_summary::-webkit-details-marker]:hidden"
-      open
-    >
-      <summary className="flex cursor-pointer items-center justify-between gap-1.5">
-        <h2 className="text-lg font-medium text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing?
-        </h2>
-  
-        <span className="shrink-0 rounded-full bg-transparent text-[#D434FE]  p-1.5 sm:p-3">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-45"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </span>
-      </summary>
-  
-      <p className="mt-4 leading-relaxed text-white">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-        molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-        voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-        earum similique!
-      </p>
-    </details>
-    <details
-      className="group border-b-2 border-[#D434FE] bg-[#150E28] p-6 [&_summary::-webkit-details-marker]:hidden"
-      open
-    >
-      <summary className="flex cursor-pointer items-center justify-between gap-1.5">
-        <h2 className="text-lg font-medium text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing?
-        </h2>
-  
-        <span className="shrink-0 rounded-full bg-transparent text-[#D434FE]  p-1.5 sm:p-3">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-45"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </span>
-      </summary>
-  
-      <p className="mt-4 leading-relaxed text-white">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-        molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-        voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-        earum similique!
-      </p>
-    </details>
-    <details
-      className="group border-b-2 border-[#D434FE] bg-[#150E28] p-6 [&_summary::-webkit-details-marker]:hidden"
-      open
-    >
-      <summary className="flex cursor-pointer items-center justify-between gap-1.5">
-        <h2 className="text-lg font-medium text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing?
-        </h2>
-  
-        <span className="shrink-0 rounded-full bg-transparent text-[#D434FE]  p-1.5 sm:p-3">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-45"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </span>
-      </summary>
-  
-      <p className="mt-4 leading-relaxed text-white">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-        molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-        voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-        earum similique!
-      </p>
-    </details>
-    <details
-      className="group border-b-2 border-[#D434FE] bg-[#150E28] p-6 [&_summary::-webkit-details-marker]:hidden"
-      open
-    >
-      <summary className="flex cursor-pointer items-center justify-between gap-1.5">
-        <h2 className="text-lg font-medium text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing?
-        </h2>
-  
-        <span className="shrink-0 rounded-full bg-transparent text-[#D434FE]  p-1.5 sm:p-3">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-45"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </span>
-      </summary>
-  
-      <p className="mt-4 leading-relaxed text-white">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-        molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-        voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-        earum similique!
-      </p>
-    </details>
-    <details
-      className="group border-b-2 border-[#D434FE] bg-[#150E28] p-6 [&_summary::-webkit-details-marker]:hidden"
-      open
-    >
-      <summary className="flex cursor-pointer items-center justify-between gap-1.5">
-        <h2 className="text-lg font-medium text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing?
-        </h2>
-  
-        <span className="shrink-0 rounded-full bg-transparent text-[#D434FE]  p-1.5 sm:p-3">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-45"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </span>
-      </summary>
-  
-      <p className="mt-4 leading-relaxed text-white">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-        molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-        voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-        earum similique!
-      </p>
-    </details>
-  </div>
+        {/* bottom */}
+        <div className={` w-full grid  place-items-center`}>
+          <img
+            src={que}
+            alt=""
+            loading="lazy"
+            className="w-[80%] max-md:w-[80%]"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 
-  <div>
-  <img src={faq} alt="" />
-  </div>
-   </div>
-  
-  
-  
-  </div>
-  )
-}
-
-export default FAQs
+export default FAQs;
